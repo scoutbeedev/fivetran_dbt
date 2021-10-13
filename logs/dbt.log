@@ -1,0 +1,780 @@
+2021-10-13 09:08:16.351393 (MainThread): Running with dbt=0.21.0
+2021-10-13 09:08:18.975421 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/Users/jonas.albrecht/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-10-13 09:08:18.979123 (MainThread): Tracking: tracking
+2021-10-13 09:08:18.980944 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe1a6f42af0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe1a3df7c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe1a6f53d30>]}
+2021-10-13 09:08:18.999243 (MainThread): Partial parsing not enabled
+2021-10-13 09:08:19.026042 (MainThread): Parsing macros/catalog.sql
+2021-10-13 09:08:19.028917 (MainThread): Parsing macros/adapters.sql
+2021-10-13 09:08:19.073822 (MainThread): Parsing macros/materializations/merge.sql
+2021-10-13 09:08:19.079012 (MainThread): Parsing macros/materializations/seed.sql
+2021-10-13 09:08:19.083883 (MainThread): Parsing macros/materializations/view.sql
+2021-10-13 09:08:19.085279 (MainThread): Parsing macros/materializations/table.sql
+2021-10-13 09:08:19.088521 (MainThread): Parsing macros/materializations/incremental.sql
+2021-10-13 09:08:19.099407 (MainThread): Parsing macros/core.sql
+2021-10-13 09:08:19.103193 (MainThread): Parsing macros/materializations/test.sql
+2021-10-13 09:08:19.110318 (MainThread): Parsing macros/materializations/helpers.sql
+2021-10-13 09:08:19.121768 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-10-13 09:08:19.123625 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-10-13 09:08:19.141524 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-10-13 09:08:19.176938 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-10-13 09:08:19.201242 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-10-13 09:08:19.203080 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-10-13 09:08:19.213815 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2021-10-13 09:08:19.234863 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-10-13 09:08:19.249905 (MainThread): Parsing macros/materializations/table/table.sql
+2021-10-13 09:08:19.258255 (MainThread): Parsing macros/materializations/view/view.sql
+2021-10-13 09:08:19.266096 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-10-13 09:08:19.270077 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-10-13 09:08:19.271715 (MainThread): Parsing macros/etc/query.sql
+2021-10-13 09:08:19.272813 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-10-13 09:08:19.274460 (MainThread): Parsing macros/etc/datetime.sql
+2021-10-13 09:08:19.283492 (MainThread): Parsing macros/etc/where_subquery.sql
+2021-10-13 09:08:19.285317 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-10-13 09:08:19.288179 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-10-13 09:08:19.290107 (MainThread): Parsing macros/adapters/common.sql
+2021-10-13 09:08:19.348882 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-10-13 09:08:19.350728 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-10-13 09:08:19.352039 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-10-13 09:08:19.353391 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-10-13 09:08:19.575943 (MainThread): Acquiring new snowflake connection "model.fivetran_dbt.my_first_dbt_model".
+2021-10-13 09:08:19.589065 (MainThread): Acquiring new snowflake connection "model.fivetran_dbt.my_second_dbt_model".
+2021-10-13 09:08:19.616936 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-13 09:08:19.618927 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-13 09:08:19.620715 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-13 09:08:19.622897 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-13 09:08:19.636652 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0c9371ad-048a-4ae3-bdbf-1b9cc62c22c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe1a70703d0>]}
+2021-10-13 09:08:19.642052 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2021-10-13 09:08:19.642507 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0c9371ad-048a-4ae3-bdbf-1b9cc62c22c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe1a70707c0>]}
+2021-10-13 09:08:19.642773 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 172 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-10-13 09:08:19.644361 (MainThread): 
+2021-10-13 09:08:19.644782 (MainThread): Acquiring new snowflake connection "master".
+2021-10-13 09:08:19.645693 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_SB_DATABASE".
+2021-10-13 09:08:19.659823 (ThreadPoolExecutor-0_0): Using snowflake connection "list_SB_DATABASE".
+2021-10-13 09:08:19.660023 (ThreadPoolExecutor-0_0): On list_SB_DATABASE: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_SB_DATABASE"} */
+
+    show terse schemas in database SB_DATABASE
+    limit 10000
+2021-10-13 09:08:19.660154 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-10-13 09:08:21.467926 (ThreadPoolExecutor-0_0): Got an error when attempting to open a snowflake connection: '250001 (08001): Failed to connect to DB: ty75791.eu-central-1.snowflakecomputing.com:443. Incorrect username or password was specified.'
+2021-10-13 09:08:21.468213 (ThreadPoolExecutor-0_0): Error running SQL: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_SB_DATABASE"} */
+
+    show terse schemas in database SB_DATABASE
+    limit 10000
+2021-10-13 09:08:21.468377 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2021-10-13 09:08:21.468608 (ThreadPoolExecutor-0_0): Error running SQL: macro list_schemas
+2021-10-13 09:08:21.468765 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2021-10-13 09:08:21.468974 (ThreadPoolExecutor-0_0): On list_SB_DATABASE: No close available on handle
+2021-10-13 09:08:21.469712 (MainThread): Connection 'master' was properly closed.
+2021-10-13 09:08:21.469934 (MainThread): Connection 'list_SB_DATABASE' was properly closed.
+2021-10-13 09:08:21.470223 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe1a7018820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe1a7070c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe1a7062e20>]}
+2021-10-13 09:08:21.470548 (MainThread): Flushing usage events
+2021-10-13 09:08:24.020652 (MainThread): Encountered an error:
+2021-10-13 09:08:24.020966 (MainThread): Runtime Error
+  Database error while listing schemas in database "SB_DATABASE"
+  Database Error
+    250001 (08001): Failed to connect to DB: ty75791.eu-central-1.snowflakecomputing.com:443. Incorrect username or password was specified.
+2021-10-13 09:08:24.026949 (MainThread): Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 224, in open
+    handle = snowflake.connector.connect(
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/__init__.py", line 50, in Connect
+    return SnowflakeConnection(**kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/connection.py", line 273, in __init__
+    self.connect(**kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/connection.py", line 484, in connect
+    self.__open_connection()
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/connection.py", line 723, in __open_connection
+    self._authenticate(auth_instance)
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/connection.py", line 984, in _authenticate
+    self.__authenticate(self.__preprocess_auth_instance(auth_instance))
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/connection.py", line 1003, in __authenticate
+    auth.authenticate(
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/auth.py", line 380, in authenticate
+    Error.errorhandler_wrapper(
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 261, in errorhandler_wrapper
+    connection.errorhandler(connection, cursor, error_class, error_value)
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 188, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.DatabaseError: 250001 (08001): Failed to connect to DB: ty75791.eu-central-1.snowflakecomputing.com:443. Incorrect username or password was specified.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/impl.py", line 102, in list_schemas
+    results = self.execute_macro(
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 1000, in execute_macro
+    result = macro_function(**kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 20, in macro
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 42, in macro
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 33, in macro
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 226, in execute
+    return self.connections.execute(
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 131, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 354, in add_query
+    connection, cursor = super().add_query(
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 79, in add_query
+    cursor = connection.handle.cursor()
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/contracts/connection.py", line 82, in handle
+    self._handle.resolve(self)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/contracts/connection.py", line 108, in resolve
+    return self.opener(connection)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 252, in open
+    raise FailedToConnectException(str(e))
+dbt.exceptions.FailedToConnectException: Database Error
+  250001 (08001): Failed to connect to DB: ty75791.eu-central-1.snowflakecomputing.com:443. Incorrect username or password was specified.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/main.py", line 127, in main
+    results, succeeded = handle_and_check(args)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/main.py", line 205, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/main.py", line 258, in run_from_args
+    results = task.run()
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/runnable.py", line 452, in run
+    result = self.execute_with_hooks(selected_uids)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/runnable.py", line 410, in execute_with_hooks
+    self.before_run(adapter, selected_uids)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/run.py", line 410, in before_run
+    self.create_schemas(adapter, selected_uids)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/runnable.py", line 541, in create_schemas
+    existing_schemas_lowered.update(ls_future.result())
+  File "/opt/anaconda3/lib/python3.8/concurrent/futures/_base.py", line 432, in result
+    return self.__get_result()
+  File "/opt/anaconda3/lib/python3.8/concurrent/futures/_base.py", line 388, in __get_result
+    raise self._exception
+  File "/opt/anaconda3/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/utils.py", line 482, in connected
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/runnable.py", line 518, in list_schemas
+    for s in adapter.list_schemas(database_quoted)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/impl.py", line 111, in list_schemas
+    raise RuntimeException(msg)
+dbt.exceptions.RuntimeException: Runtime Error
+  Database error while listing schemas in database "SB_DATABASE"
+  Database Error
+    250001 (08001): Failed to connect to DB: ty75791.eu-central-1.snowflakecomputing.com:443. Incorrect username or password was specified.
+
+2021-10-13 09:08:42.862476 (MainThread): Running with dbt=0.21.0
+2021-10-13 09:08:45.111536 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/Users/jonas.albrecht/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-10-13 09:08:45.115003 (MainThread): Tracking: tracking
+2021-10-13 09:08:45.116023 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7e0841580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7dd610940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7e0853c40>]}
+2021-10-13 09:08:45.131161 (MainThread): Partial parsing not enabled
+2021-10-13 09:08:45.157179 (MainThread): Parsing macros/catalog.sql
+2021-10-13 09:08:45.159790 (MainThread): Parsing macros/adapters.sql
+2021-10-13 09:08:45.200608 (MainThread): Parsing macros/materializations/merge.sql
+2021-10-13 09:08:45.204801 (MainThread): Parsing macros/materializations/seed.sql
+2021-10-13 09:08:45.209734 (MainThread): Parsing macros/materializations/view.sql
+2021-10-13 09:08:45.211474 (MainThread): Parsing macros/materializations/table.sql
+2021-10-13 09:08:45.215168 (MainThread): Parsing macros/materializations/incremental.sql
+2021-10-13 09:08:45.226760 (MainThread): Parsing macros/core.sql
+2021-10-13 09:08:45.230764 (MainThread): Parsing macros/materializations/test.sql
+2021-10-13 09:08:45.237589 (MainThread): Parsing macros/materializations/helpers.sql
+2021-10-13 09:08:45.249112 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-10-13 09:08:45.250991 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-10-13 09:08:45.269495 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-10-13 09:08:45.305122 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-10-13 09:08:45.330212 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-10-13 09:08:45.332040 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-10-13 09:08:45.343372 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2021-10-13 09:08:45.365045 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-10-13 09:08:45.379828 (MainThread): Parsing macros/materializations/table/table.sql
+2021-10-13 09:08:45.388151 (MainThread): Parsing macros/materializations/view/view.sql
+2021-10-13 09:08:45.396074 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-10-13 09:08:45.400152 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-10-13 09:08:45.401681 (MainThread): Parsing macros/etc/query.sql
+2021-10-13 09:08:45.402715 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-10-13 09:08:45.404235 (MainThread): Parsing macros/etc/datetime.sql
+2021-10-13 09:08:45.413371 (MainThread): Parsing macros/etc/where_subquery.sql
+2021-10-13 09:08:45.415207 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-10-13 09:08:45.417654 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-10-13 09:08:45.419294 (MainThread): Parsing macros/adapters/common.sql
+2021-10-13 09:08:45.478592 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-10-13 09:08:45.480333 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-10-13 09:08:45.481531 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-10-13 09:08:45.483003 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-10-13 09:08:45.685243 (MainThread): Acquiring new snowflake connection "model.fivetran_dbt.my_first_dbt_model".
+2021-10-13 09:08:45.699085 (MainThread): Acquiring new snowflake connection "model.fivetran_dbt.my_second_dbt_model".
+2021-10-13 09:08:45.726715 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-13 09:08:45.728599 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-13 09:08:45.730409 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-13 09:08:45.732304 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-13 09:08:45.746510 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '21b59ca3-9950-42af-9cbb-f34fe464e33c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7e0971fd0>]}
+2021-10-13 09:08:45.751690 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2021-10-13 09:08:45.752158 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '21b59ca3-9950-42af-9cbb-f34fe464e33c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7e0971640>]}
+2021-10-13 09:08:45.752421 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 172 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-10-13 09:08:45.754022 (MainThread): 
+2021-10-13 09:08:45.754488 (MainThread): Acquiring new snowflake connection "master".
+2021-10-13 09:08:45.755467 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_SB_DATABASE".
+2021-10-13 09:08:45.767698 (ThreadPoolExecutor-0_0): Using snowflake connection "list_SB_DATABASE".
+2021-10-13 09:08:45.767921 (ThreadPoolExecutor-0_0): On list_SB_DATABASE: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_SB_DATABASE"} */
+
+    show terse schemas in database SB_DATABASE
+    limit 10000
+2021-10-13 09:08:45.768056 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-10-13 09:08:46.309761 (ThreadPoolExecutor-0_0): Got an error when attempting to open a snowflake connection: '250001 (08001): Failed to connect to DB: ty75791.eu-central-1.snowflakecomputing.com:443. Incorrect username or password was specified.'
+2021-10-13 09:08:46.310028 (ThreadPoolExecutor-0_0): Error running SQL: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_SB_DATABASE"} */
+
+    show terse schemas in database SB_DATABASE
+    limit 10000
+2021-10-13 09:08:46.310169 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2021-10-13 09:08:46.310361 (ThreadPoolExecutor-0_0): Error running SQL: macro list_schemas
+2021-10-13 09:08:46.310485 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2021-10-13 09:08:46.310656 (ThreadPoolExecutor-0_0): On list_SB_DATABASE: No close available on handle
+2021-10-13 09:08:46.311347 (MainThread): Connection 'master' was properly closed.
+2021-10-13 09:08:46.311511 (MainThread): Connection 'list_SB_DATABASE' was properly closed.
+2021-10-13 09:08:46.311735 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7e091f700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7e08c0ee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7e0971970>]}
+2021-10-13 09:08:46.312021 (MainThread): Flushing usage events
+2021-10-13 09:08:48.593414 (MainThread): Encountered an error:
+2021-10-13 09:08:48.593738 (MainThread): Runtime Error
+  Database error while listing schemas in database "SB_DATABASE"
+  Database Error
+    250001 (08001): Failed to connect to DB: ty75791.eu-central-1.snowflakecomputing.com:443. Incorrect username or password was specified.
+2021-10-13 09:08:48.607473 (MainThread): Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 224, in open
+    handle = snowflake.connector.connect(
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/__init__.py", line 50, in Connect
+    return SnowflakeConnection(**kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/connection.py", line 273, in __init__
+    self.connect(**kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/connection.py", line 484, in connect
+    self.__open_connection()
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/connection.py", line 723, in __open_connection
+    self._authenticate(auth_instance)
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/connection.py", line 984, in _authenticate
+    self.__authenticate(self.__preprocess_auth_instance(auth_instance))
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/connection.py", line 1003, in __authenticate
+    auth.authenticate(
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/auth.py", line 380, in authenticate
+    Error.errorhandler_wrapper(
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 261, in errorhandler_wrapper
+    connection.errorhandler(connection, cursor, error_class, error_value)
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 188, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.DatabaseError: 250001 (08001): Failed to connect to DB: ty75791.eu-central-1.snowflakecomputing.com:443. Incorrect username or password was specified.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/impl.py", line 102, in list_schemas
+    results = self.execute_macro(
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 1000, in execute_macro
+    result = macro_function(**kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 20, in macro
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 42, in macro
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 33, in macro
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 226, in execute
+    return self.connections.execute(
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 131, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 354, in add_query
+    connection, cursor = super().add_query(
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 79, in add_query
+    cursor = connection.handle.cursor()
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/contracts/connection.py", line 82, in handle
+    self._handle.resolve(self)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/contracts/connection.py", line 108, in resolve
+    return self.opener(connection)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 252, in open
+    raise FailedToConnectException(str(e))
+dbt.exceptions.FailedToConnectException: Database Error
+  250001 (08001): Failed to connect to DB: ty75791.eu-central-1.snowflakecomputing.com:443. Incorrect username or password was specified.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/main.py", line 127, in main
+    results, succeeded = handle_and_check(args)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/main.py", line 205, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/main.py", line 258, in run_from_args
+    results = task.run()
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/runnable.py", line 452, in run
+    result = self.execute_with_hooks(selected_uids)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/runnable.py", line 410, in execute_with_hooks
+    self.before_run(adapter, selected_uids)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/run.py", line 410, in before_run
+    self.create_schemas(adapter, selected_uids)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/runnable.py", line 541, in create_schemas
+    existing_schemas_lowered.update(ls_future.result())
+  File "/opt/anaconda3/lib/python3.8/concurrent/futures/_base.py", line 432, in result
+    return self.__get_result()
+  File "/opt/anaconda3/lib/python3.8/concurrent/futures/_base.py", line 388, in __get_result
+    raise self._exception
+  File "/opt/anaconda3/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/utils.py", line 482, in connected
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/runnable.py", line 518, in list_schemas
+    for s in adapter.list_schemas(database_quoted)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/impl.py", line 111, in list_schemas
+    raise RuntimeException(msg)
+dbt.exceptions.RuntimeException: Runtime Error
+  Database error while listing schemas in database "SB_DATABASE"
+  Database Error
+    250001 (08001): Failed to connect to DB: ty75791.eu-central-1.snowflakecomputing.com:443. Incorrect username or password was specified.
+
+2021-10-13 09:25:27.818671 (MainThread): Running with dbt=0.21.0
+2021-10-13 09:25:30.509743 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/Users/jonas.albrecht/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-10-13 09:25:30.513189 (MainThread): Tracking: tracking
+2021-10-13 09:25:30.514823 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc640f7a3a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc63de0f7f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc640f4dca0>]}
+2021-10-13 09:25:30.531704 (MainThread): Partial parsing not enabled
+2021-10-13 09:25:30.559626 (MainThread): Parsing macros/catalog.sql
+2021-10-13 09:25:30.562185 (MainThread): Parsing macros/adapters.sql
+2021-10-13 09:25:30.603397 (MainThread): Parsing macros/materializations/merge.sql
+2021-10-13 09:25:30.607567 (MainThread): Parsing macros/materializations/seed.sql
+2021-10-13 09:25:30.612957 (MainThread): Parsing macros/materializations/view.sql
+2021-10-13 09:25:30.614469 (MainThread): Parsing macros/materializations/table.sql
+2021-10-13 09:25:30.617564 (MainThread): Parsing macros/materializations/incremental.sql
+2021-10-13 09:25:30.626265 (MainThread): Parsing macros/core.sql
+2021-10-13 09:25:30.630428 (MainThread): Parsing macros/materializations/test.sql
+2021-10-13 09:25:30.639015 (MainThread): Parsing macros/materializations/helpers.sql
+2021-10-13 09:25:30.650056 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-10-13 09:25:30.651999 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-10-13 09:25:30.670359 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-10-13 09:25:30.705725 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-10-13 09:25:30.730056 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-10-13 09:25:30.731887 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-10-13 09:25:30.742600 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2021-10-13 09:25:30.763583 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-10-13 09:25:30.778031 (MainThread): Parsing macros/materializations/table/table.sql
+2021-10-13 09:25:30.786451 (MainThread): Parsing macros/materializations/view/view.sql
+2021-10-13 09:25:30.794099 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-10-13 09:25:30.797995 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-10-13 09:25:30.799615 (MainThread): Parsing macros/etc/query.sql
+2021-10-13 09:25:30.800595 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-10-13 09:25:30.802096 (MainThread): Parsing macros/etc/datetime.sql
+2021-10-13 09:25:30.810963 (MainThread): Parsing macros/etc/where_subquery.sql
+2021-10-13 09:25:30.812913 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-10-13 09:25:30.815370 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-10-13 09:25:30.816936 (MainThread): Parsing macros/adapters/common.sql
+2021-10-13 09:25:30.876882 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-10-13 09:25:30.878607 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-10-13 09:25:30.879802 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-10-13 09:25:30.881211 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-10-13 09:25:31.078933 (MainThread): Acquiring new snowflake connection "model.fivetran_dbt.my_first_dbt_model".
+2021-10-13 09:25:31.092251 (MainThread): Acquiring new snowflake connection "model.fivetran_dbt.my_second_dbt_model".
+2021-10-13 09:25:31.118764 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-13 09:25:31.120645 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-13 09:25:31.122623 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-13 09:25:31.124560 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-13 09:25:31.142989 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '51b15608-ab71-45b7-8043-4874d1594580', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc640f8eb80>]}
+2021-10-13 09:25:31.149421 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2021-10-13 09:25:31.150230 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '51b15608-ab71-45b7-8043-4874d1594580', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc641005220>]}
+2021-10-13 09:25:31.150627 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 172 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-10-13 09:25:31.152213 (MainThread): 
+2021-10-13 09:25:31.152605 (MainThread): Acquiring new snowflake connection "master".
+2021-10-13 09:25:31.153503 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_SB_DATABASE".
+2021-10-13 09:25:31.165688 (ThreadPoolExecutor-0_0): Using snowflake connection "list_SB_DATABASE".
+2021-10-13 09:25:31.165906 (ThreadPoolExecutor-0_0): On list_SB_DATABASE: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_SB_DATABASE"} */
+
+    show terse schemas in database SB_DATABASE
+    limit 10000
+2021-10-13 09:25:31.166040 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-10-13 09:25:31.757354 (ThreadPoolExecutor-0_0): Got an error when attempting to open a snowflake connection: '250001 (08001): Failed to connect to DB: ty75791.eu-central-1.snowflakecomputing.com:443. Incorrect username or password was specified.'
+2021-10-13 09:25:31.757579 (ThreadPoolExecutor-0_0): Error running SQL: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_SB_DATABASE"} */
+
+    show terse schemas in database SB_DATABASE
+    limit 10000
+2021-10-13 09:25:31.757703 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2021-10-13 09:25:31.757873 (ThreadPoolExecutor-0_0): Error running SQL: macro list_schemas
+2021-10-13 09:25:31.758018 (ThreadPoolExecutor-0_0): Rolling back transaction.
+2021-10-13 09:25:31.758176 (ThreadPoolExecutor-0_0): On list_SB_DATABASE: No close available on handle
+2021-10-13 09:25:31.758808 (MainThread): Connection 'master' was properly closed.
+2021-10-13 09:25:31.758953 (MainThread): Connection 'list_SB_DATABASE' was properly closed.
+2021-10-13 09:25:31.759158 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc641019790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc640fd4220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc641072d00>]}
+2021-10-13 09:25:31.759384 (MainThread): Flushing usage events
+2021-10-13 09:25:34.292357 (MainThread): Encountered an error:
+2021-10-13 09:25:34.292614 (MainThread): Runtime Error
+  Database error while listing schemas in database "SB_DATABASE"
+  Database Error
+    250001 (08001): Failed to connect to DB: ty75791.eu-central-1.snowflakecomputing.com:443. Incorrect username or password was specified.
+2021-10-13 09:25:34.304364 (MainThread): Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 224, in open
+    handle = snowflake.connector.connect(
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/__init__.py", line 50, in Connect
+    return SnowflakeConnection(**kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/connection.py", line 273, in __init__
+    self.connect(**kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/connection.py", line 484, in connect
+    self.__open_connection()
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/connection.py", line 723, in __open_connection
+    self._authenticate(auth_instance)
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/connection.py", line 984, in _authenticate
+    self.__authenticate(self.__preprocess_auth_instance(auth_instance))
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/connection.py", line 1003, in __authenticate
+    auth.authenticate(
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/auth.py", line 380, in authenticate
+    Error.errorhandler_wrapper(
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 261, in errorhandler_wrapper
+    connection.errorhandler(connection, cursor, error_class, error_value)
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 188, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.DatabaseError: 250001 (08001): Failed to connect to DB: ty75791.eu-central-1.snowflakecomputing.com:443. Incorrect username or password was specified.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/impl.py", line 102, in list_schemas
+    results = self.execute_macro(
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 1000, in execute_macro
+    result = macro_function(**kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 20, in macro
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 42, in macro
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 33, in macro
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 226, in execute
+    return self.connections.execute(
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 131, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 354, in add_query
+    connection, cursor = super().add_query(
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 79, in add_query
+    cursor = connection.handle.cursor()
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/contracts/connection.py", line 82, in handle
+    self._handle.resolve(self)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/contracts/connection.py", line 108, in resolve
+    return self.opener(connection)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 252, in open
+    raise FailedToConnectException(str(e))
+dbt.exceptions.FailedToConnectException: Database Error
+  250001 (08001): Failed to connect to DB: ty75791.eu-central-1.snowflakecomputing.com:443. Incorrect username or password was specified.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/main.py", line 127, in main
+    results, succeeded = handle_and_check(args)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/main.py", line 205, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/main.py", line 258, in run_from_args
+    results = task.run()
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/runnable.py", line 452, in run
+    result = self.execute_with_hooks(selected_uids)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/runnable.py", line 410, in execute_with_hooks
+    self.before_run(adapter, selected_uids)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/run.py", line 410, in before_run
+    self.create_schemas(adapter, selected_uids)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/runnable.py", line 541, in create_schemas
+    existing_schemas_lowered.update(ls_future.result())
+  File "/opt/anaconda3/lib/python3.8/concurrent/futures/_base.py", line 432, in result
+    return self.__get_result()
+  File "/opt/anaconda3/lib/python3.8/concurrent/futures/_base.py", line 388, in __get_result
+    raise self._exception
+  File "/opt/anaconda3/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/utils.py", line 482, in connected
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/runnable.py", line 518, in list_schemas
+    for s in adapter.list_schemas(database_quoted)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/impl.py", line 111, in list_schemas
+    raise RuntimeException(msg)
+dbt.exceptions.RuntimeException: Runtime Error
+  Database error while listing schemas in database "SB_DATABASE"
+  Database Error
+    250001 (08001): Failed to connect to DB: ty75791.eu-central-1.snowflakecomputing.com:443. Incorrect username or password was specified.
+
+2021-10-13 09:27:10.485394 (MainThread): Running with dbt=0.21.0
+2021-10-13 09:27:12.274275 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/Users/jonas.albrecht/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-10-13 09:27:12.278103 (MainThread): Tracking: tracking
+2021-10-13 09:27:12.279292 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd2aa7402b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd2a76169a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd2aa74fca0>]}
+2021-10-13 09:27:12.297809 (MainThread): Partial parsing not enabled
+2021-10-13 09:27:12.327133 (MainThread): Parsing macros/catalog.sql
+2021-10-13 09:27:12.331002 (MainThread): Parsing macros/adapters.sql
+2021-10-13 09:27:12.380666 (MainThread): Parsing macros/materializations/merge.sql
+2021-10-13 09:27:12.384692 (MainThread): Parsing macros/materializations/seed.sql
+2021-10-13 09:27:12.392890 (MainThread): Parsing macros/materializations/view.sql
+2021-10-13 09:27:12.394536 (MainThread): Parsing macros/materializations/table.sql
+2021-10-13 09:27:12.397785 (MainThread): Parsing macros/materializations/incremental.sql
+2021-10-13 09:27:12.415835 (MainThread): Parsing macros/core.sql
+2021-10-13 09:27:12.421317 (MainThread): Parsing macros/materializations/test.sql
+2021-10-13 09:27:12.429475 (MainThread): Parsing macros/materializations/helpers.sql
+2021-10-13 09:27:12.440633 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-10-13 09:27:12.442328 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-10-13 09:27:12.460909 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-10-13 09:27:12.498586 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-10-13 09:27:12.523132 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-10-13 09:27:12.525201 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-10-13 09:27:12.536280 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2021-10-13 09:27:12.557665 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-10-13 09:27:12.573016 (MainThread): Parsing macros/materializations/table/table.sql
+2021-10-13 09:27:12.581228 (MainThread): Parsing macros/materializations/view/view.sql
+2021-10-13 09:27:12.589114 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-10-13 09:27:12.593308 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-10-13 09:27:12.594909 (MainThread): Parsing macros/etc/query.sql
+2021-10-13 09:27:12.595883 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-10-13 09:27:12.597447 (MainThread): Parsing macros/etc/datetime.sql
+2021-10-13 09:27:12.606245 (MainThread): Parsing macros/etc/where_subquery.sql
+2021-10-13 09:27:12.608295 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-10-13 09:27:12.610757 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-10-13 09:27:12.612507 (MainThread): Parsing macros/adapters/common.sql
+2021-10-13 09:27:12.672787 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-10-13 09:27:12.674504 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-10-13 09:27:12.675685 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-10-13 09:27:12.677084 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-10-13 09:27:12.889094 (MainThread): Acquiring new snowflake connection "model.fivetran_dbt.my_first_dbt_model".
+2021-10-13 09:27:12.902136 (MainThread): Acquiring new snowflake connection "model.fivetran_dbt.my_second_dbt_model".
+2021-10-13 09:27:12.928220 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-13 09:27:12.929987 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-13 09:27:12.931671 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-13 09:27:12.933492 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-13 09:27:12.949741 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd8172b9a-4eb5-4260-955e-02b02d2b884f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd2aa870e80>]}
+2021-10-13 09:27:12.954828 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2021-10-13 09:27:12.955838 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd8172b9a-4eb5-4260-955e-02b02d2b884f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd2aa870520>]}
+2021-10-13 09:27:12.956258 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 172 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-10-13 09:27:12.958212 (MainThread): 
+2021-10-13 09:27:12.958593 (MainThread): Acquiring new snowflake connection "master".
+2021-10-13 09:27:12.959618 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_SB_DATABASE".
+2021-10-13 09:27:12.971785 (ThreadPoolExecutor-0_0): Using snowflake connection "list_SB_DATABASE".
+2021-10-13 09:27:12.971976 (ThreadPoolExecutor-0_0): On list_SB_DATABASE: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_SB_DATABASE"} */
+
+    show terse schemas in database SB_DATABASE
+    limit 10000
+2021-10-13 09:27:12.972158 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-10-13 09:27:13.014123 (ThreadPoolExecutor-0_0): Loading KWallet
+2021-10-13 09:27:13.016026 (ThreadPoolExecutor-0_0): Loading SecretService
+2021-10-13 09:27:13.018316 (ThreadPoolExecutor-0_0): Loading Windows
+2021-10-13 09:27:13.019638 (ThreadPoolExecutor-0_0): Loading chainer
+2021-10-13 09:27:13.020543 (ThreadPoolExecutor-0_0): Loading macOS
+2021-10-13 09:27:20.573055 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 10 in 7.60 seconds
+2021-10-13 09:27:20.577274 (ThreadPoolExecutor-0_0): On list_SB_DATABASE: Close
+2021-10-13 09:27:20.711411 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_SB_DATABASE_SB_SHIPMENTS".
+2021-10-13 09:27:20.719371 (ThreadPoolExecutor-1_0): Using snowflake connection "list_SB_DATABASE_SB_SHIPMENTS".
+2021-10-13 09:27:20.719573 (ThreadPoolExecutor-1_0): On list_SB_DATABASE_SB_SHIPMENTS: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_SB_DATABASE_SB_SHIPMENTS"} */
+
+    show terse objects in SB_DATABASE.SB_SHIPMENTS
+2021-10-13 09:27:20.719725 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-10-13 09:27:26.891061 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 5 in 6.17 seconds
+2021-10-13 09:27:26.894432 (ThreadPoolExecutor-1_0): On list_SB_DATABASE_SB_SHIPMENTS: Close
+2021-10-13 09:27:27.027131 (MainThread): 11:27:27 | Concurrency: 5 threads (target='dev')
+2021-10-13 09:27:27.027480 (MainThread): 11:27:27 | 
+2021-10-13 09:27:27.029356 (Thread-1): Began running node model.fivetran_dbt.my_first_dbt_model
+2021-10-13 09:27:27.029745 (Thread-1): 11:27:27 | 1 of 2 START table model SB_SHIPMENTS.my_first_dbt_model............. [RUN]
+2021-10-13 09:27:27.030149 (Thread-1): Acquiring new snowflake connection "model.fivetran_dbt.my_first_dbt_model".
+2021-10-13 09:27:27.030381 (Thread-1): Compiling model.fivetran_dbt.my_first_dbt_model
+2021-10-13 09:27:27.034124 (Thread-1): Writing injected SQL for node "model.fivetran_dbt.my_first_dbt_model"
+2021-10-13 09:27:27.034962 (Thread-1): finished collecting timing info
+2021-10-13 09:27:27.060290 (Thread-1): Writing runtime SQL for node "model.fivetran_dbt.my_first_dbt_model"
+2021-10-13 09:27:27.062644 (Thread-1): Using snowflake connection "model.fivetran_dbt.my_first_dbt_model".
+2021-10-13 09:27:27.062945 (Thread-1): On model.fivetran_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.fivetran_dbt.my_first_dbt_model"} */
+
+
+      create or replace transient table SB_DATABASE.SB_SHIPMENTS.my_first_dbt_model  as
+      (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+      );
+2021-10-13 09:27:27.063177 (Thread-1): Opening a new connection, currently in state closed
+2021-10-13 09:27:33.486185 (Thread-1): SQL status: SUCCESS 1 in 6.42 seconds
+2021-10-13 09:27:33.500274 (Thread-1): finished collecting timing info
+2021-10-13 09:27:33.500595 (Thread-1): On model.fivetran_dbt.my_first_dbt_model: Close
+2021-10-13 09:27:33.626882 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd8172b9a-4eb5-4260-955e-02b02d2b884f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd2aab90d90>]}
+2021-10-13 09:27:33.627623 (Thread-1): 11:27:33 | 1 of 2 OK created table model SB_SHIPMENTS.my_first_dbt_model........ [SUCCESS 1 in 6.60s]
+2021-10-13 09:27:33.627899 (Thread-1): Finished running node model.fivetran_dbt.my_first_dbt_model
+2021-10-13 09:27:33.629314 (Thread-3): Began running node model.fivetran_dbt.my_second_dbt_model
+2021-10-13 09:27:33.629687 (Thread-3): 11:27:33 | 2 of 2 START view model SB_SHIPMENTS.my_second_dbt_model............. [RUN]
+2021-10-13 09:27:33.630216 (Thread-3): Acquiring new snowflake connection "model.fivetran_dbt.my_second_dbt_model".
+2021-10-13 09:27:33.630465 (Thread-3): Compiling model.fivetran_dbt.my_second_dbt_model
+2021-10-13 09:27:33.633650 (Thread-3): Writing injected SQL for node "model.fivetran_dbt.my_second_dbt_model"
+2021-10-13 09:27:33.634220 (Thread-3): finished collecting timing info
+2021-10-13 09:27:33.649056 (Thread-3): Writing runtime SQL for node "model.fivetran_dbt.my_second_dbt_model"
+2021-10-13 09:27:33.650071 (Thread-3): Using snowflake connection "model.fivetran_dbt.my_second_dbt_model".
+2021-10-13 09:27:33.650230 (Thread-3): On model.fivetran_dbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.fivetran_dbt.my_second_dbt_model"} */
+
+  create or replace  view SB_DATABASE.SB_SHIPMENTS.my_second_dbt_model  as (
+    -- Use the `ref` function to select from other models
+
+select *
+from SB_DATABASE.SB_SHIPMENTS.my_first_dbt_model
+where id = 1
+  );
+2021-10-13 09:27:33.650364 (Thread-3): Opening a new connection, currently in state init
+2021-10-13 09:27:39.222908 (Thread-3): SQL status: SUCCESS 1 in 5.57 seconds
+2021-10-13 09:27:39.228722 (Thread-3): finished collecting timing info
+2021-10-13 09:27:39.229212 (Thread-3): On model.fivetran_dbt.my_second_dbt_model: Close
+2021-10-13 09:27:39.359770 (Thread-3): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd8172b9a-4eb5-4260-955e-02b02d2b884f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd2aad32250>]}
+2021-10-13 09:27:39.360379 (Thread-3): 11:27:39 | 2 of 2 OK created view model SB_SHIPMENTS.my_second_dbt_model........ [SUCCESS 1 in 5.73s]
+2021-10-13 09:27:39.360639 (Thread-3): Finished running node model.fivetran_dbt.my_second_dbt_model
+2021-10-13 09:27:39.363158 (MainThread): Acquiring new snowflake connection "master".
+2021-10-13 09:27:39.363769 (MainThread): 11:27:39 | 
+2021-10-13 09:27:39.364084 (MainThread): 11:27:39 | Finished running 1 table model, 1 view model in 26.41s.
+2021-10-13 09:27:39.364255 (MainThread): Connection 'master' was properly closed.
+2021-10-13 09:27:39.364424 (MainThread): Connection 'model.fivetran_dbt.my_first_dbt_model' was properly closed.
+2021-10-13 09:27:39.364553 (MainThread): Connection 'model.fivetran_dbt.my_second_dbt_model' was properly closed.
+2021-10-13 09:27:39.374965 (MainThread): 
+2021-10-13 09:27:39.375255 (MainThread): Completed successfully
+2021-10-13 09:27:39.375547 (MainThread): 
+Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+2021-10-13 09:27:39.376099 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd2a76169a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd2aa74fd30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd2aac23220>]}
+2021-10-13 09:27:39.376442 (MainThread): Flushing usage events
