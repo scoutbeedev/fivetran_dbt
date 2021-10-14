@@ -11,17 +11,11 @@
 
 
 
-with source_data as (
 
-    select 1 as id
-    union all
-    select null as id
 
-)
-
-select *
-from source_data
-
+select TOP 6
+    ARRIVAL_DATE
+from sb_shipments.shipments_silver_old
 /*
     Uncomment the line below to remove records with null `id` values
 */

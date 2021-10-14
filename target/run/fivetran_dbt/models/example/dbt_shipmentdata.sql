@@ -1,4 +1,7 @@
-/*
+
+
+      create or replace transient table SB_DATABASE.SB_SHIPMENTS.dbt_shipmentdata  as
+      (/*
     Welcome to your first dbt model!
     Did you know that you can also configure models directly within SQL files?
     This will override configurations stated in dbt_project.yml
@@ -18,3 +21,5 @@ from sb_shipments.shipments_silver_old
 */
 
 -- where id is not null
+      );
+    

@@ -9,12 +9,11 @@
 
 {{ config(materialized='table') }}
 
-create or replace table sb_shipments.new_shipmentdate as 
-select TOP 5
-        ARRIVAL_DATE
-        PURCHASER_NAME
-from SB_SHIPMENTS.SHIPMENTS_SILVER_OLD
 
+
+select TOP 6
+    ARRIVAL_DATE
+from sb_shipments.shipments_silver_old
 /*
     Uncomment the line below to remove records with null `id` values
 */
