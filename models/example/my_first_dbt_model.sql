@@ -9,16 +9,10 @@
 
 {{ config(materialized='table') }}
 
-with source_data as (
-
-    select 1 as id
-    union all
-    select null as id
-
-)
-
-select *
-from source_data
+create or replace table sb_shipments.new_shipmentdate as 
+select TOP 5
+        ARRIVAL_DATE
+from SB_SHIPMENTS.SHIPMENTS_SILVER_OLD
 
 /*
     Uncomment the line below to remove records with null `id` values
