@@ -4627,3 +4627,2142 @@ from sb_shipments.shipments_silver_old
 Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
 2021-10-14 17:18:57.306520 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf09fcb250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf0a06aee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf0a0cf0d0>]}
 2021-10-14 17:18:57.306761 (MainThread): Flushing usage events
+2021-10-14 17:29:22.540698 (MainThread): Running with dbt=0.21.0
+2021-10-14 17:29:24.980746 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/Users/jonas.albrecht/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-10-14 17:29:24.984523 (MainThread): Tracking: tracking
+2021-10-14 17:29:24.985336 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa6a572bac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa6a2610d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa6a5727c40>]}
+2021-10-14 17:29:25.000145 (MainThread): Partial parsing not enabled
+2021-10-14 17:29:25.027153 (MainThread): Parsing macros/catalog.sql
+2021-10-14 17:29:25.029669 (MainThread): Parsing macros/adapters.sql
+2021-10-14 17:29:25.069873 (MainThread): Parsing macros/materializations/merge.sql
+2021-10-14 17:29:25.079852 (MainThread): Parsing macros/materializations/seed.sql
+2021-10-14 17:29:25.092546 (MainThread): Parsing macros/materializations/view.sql
+2021-10-14 17:29:25.095245 (MainThread): Parsing macros/materializations/table.sql
+2021-10-14 17:29:25.101580 (MainThread): Parsing macros/materializations/incremental.sql
+2021-10-14 17:29:25.119791 (MainThread): Parsing macros/core.sql
+2021-10-14 17:29:25.126813 (MainThread): Parsing macros/materializations/test.sql
+2021-10-14 17:29:25.142215 (MainThread): Parsing macros/materializations/helpers.sql
+2021-10-14 17:29:25.155962 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-10-14 17:29:25.158431 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-10-14 17:29:25.186008 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-10-14 17:29:25.228010 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-10-14 17:29:25.259864 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-10-14 17:29:25.261636 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-10-14 17:29:25.272778 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2021-10-14 17:29:25.293546 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-10-14 17:29:25.308011 (MainThread): Parsing macros/materializations/table/table.sql
+2021-10-14 17:29:25.316347 (MainThread): Parsing macros/materializations/view/view.sql
+2021-10-14 17:29:25.324348 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-10-14 17:29:25.328205 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-10-14 17:29:25.329660 (MainThread): Parsing macros/etc/query.sql
+2021-10-14 17:29:25.330587 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-10-14 17:29:25.332159 (MainThread): Parsing macros/etc/datetime.sql
+2021-10-14 17:29:25.341833 (MainThread): Parsing macros/etc/where_subquery.sql
+2021-10-14 17:29:25.343789 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-10-14 17:29:25.346191 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-10-14 17:29:25.347888 (MainThread): Parsing macros/adapters/common.sql
+2021-10-14 17:29:25.411137 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-10-14 17:29:25.412844 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-10-14 17:29:25.414619 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-10-14 17:29:25.416944 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-10-14 17:29:25.620121 (MainThread): Acquiring new snowflake connection "model.fivetran_dbt.dbt_shipmentdata".
+2021-10-14 17:29:25.656301 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-14 17:29:25.658129 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-14 17:29:25.674133 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3796da8c-c6fd-4312-bd28-d9dca2471497', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa6a58459d0>]}
+2021-10-14 17:29:25.683332 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2021-10-14 17:29:25.683818 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3796da8c-c6fd-4312-bd28-d9dca2471497', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa6a57e0040>]}
+2021-10-14 17:29:25.684119 (MainThread): Found 1 model, 2 tests, 0 snapshots, 0 analyses, 172 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-10-14 17:29:25.685420 (MainThread): 
+2021-10-14 17:29:25.685836 (MainThread): Acquiring new snowflake connection "master".
+2021-10-14 17:29:25.686668 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_SB_DATABASE".
+2021-10-14 17:29:25.698655 (ThreadPoolExecutor-0_0): Using snowflake connection "list_SB_DATABASE".
+2021-10-14 17:29:25.698880 (ThreadPoolExecutor-0_0): On list_SB_DATABASE: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_SB_DATABASE"} */
+
+    show terse schemas in database SB_DATABASE
+    limit 10000
+2021-10-14 17:29:25.699014 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-10-14 17:29:25.742379 (ThreadPoolExecutor-0_0): Loading KWallet
+2021-10-14 17:29:25.743863 (ThreadPoolExecutor-0_0): Loading SecretService
+2021-10-14 17:29:25.744928 (ThreadPoolExecutor-0_0): Loading Windows
+2021-10-14 17:29:25.746070 (ThreadPoolExecutor-0_0): Loading chainer
+2021-10-14 17:29:25.746787 (ThreadPoolExecutor-0_0): Loading macOS
+2021-10-14 17:29:36.576899 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 9 in 10.88 seconds
+2021-10-14 17:29:36.581139 (ThreadPoolExecutor-0_0): On list_SB_DATABASE: Close
+2021-10-14 17:29:36.733803 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_SB_DATABASE_SB_SHIPMENTS".
+2021-10-14 17:29:36.744448 (ThreadPoolExecutor-1_0): Using snowflake connection "list_SB_DATABASE_SB_SHIPMENTS".
+2021-10-14 17:29:36.744652 (ThreadPoolExecutor-1_0): On list_SB_DATABASE_SB_SHIPMENTS: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_SB_DATABASE_SB_SHIPMENTS"} */
+
+    show terse objects in SB_DATABASE.SB_SHIPMENTS
+2021-10-14 17:29:36.744791 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-10-14 17:29:43.250119 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 7 in 6.51 seconds
+2021-10-14 17:29:43.254842 (ThreadPoolExecutor-1_0): On list_SB_DATABASE_SB_SHIPMENTS: Close
+2021-10-14 17:29:43.440550 (MainThread): 19:29:43 | Concurrency: 5 threads (target='dev')
+2021-10-14 17:29:43.440902 (MainThread): 19:29:43 | 
+2021-10-14 17:29:43.443436 (Thread-1): Began running node model.fivetran_dbt.dbt_shipmentdata
+2021-10-14 17:29:43.443893 (Thread-1): 19:29:43 | 1 of 1 START table model SB_SHIPMENTS.dbt_shipmentdata............... [RUN]
+2021-10-14 17:29:43.444294 (Thread-1): Acquiring new snowflake connection "model.fivetran_dbt.dbt_shipmentdata".
+2021-10-14 17:29:43.444529 (Thread-1): Compiling model.fivetran_dbt.dbt_shipmentdata
+2021-10-14 17:29:43.448883 (Thread-1): Writing injected SQL for node "model.fivetran_dbt.dbt_shipmentdata"
+2021-10-14 17:29:43.450309 (Thread-1): finished collecting timing info
+2021-10-14 17:29:43.475354 (Thread-1): Writing runtime SQL for node "model.fivetran_dbt.dbt_shipmentdata"
+2021-10-14 17:29:43.476594 (Thread-1): Using snowflake connection "model.fivetran_dbt.dbt_shipmentdata".
+2021-10-14 17:29:43.476762 (Thread-1): On model.fivetran_dbt.dbt_shipmentdata: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.fivetran_dbt.dbt_shipmentdata"} */
+
+
+      create or replace transient table SB_DATABASE.SB_SHIPMENTS.dbt_shipmentdata  as
+      (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+
+
+select TOP 6
+    TO_VARCHAT(ARRIVAL_DATE) AS ARRIVAL_DATE
+from sb_shipments.shipments_silver_old
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+      );
+2021-10-14 17:29:43.476939 (Thread-1): Opening a new connection, currently in state closed
+2021-10-14 17:29:48.664089 (Thread-1): Snowflake query id: 019f9b59-3200-a96a-0000-b50500471236
+2021-10-14 17:29:48.664896 (Thread-1): Snowflake error: 002140 (42601): SQL compilation error:
+Unknown function TO_VARCHAT
+2021-10-14 17:29:48.665425 (Thread-1): finished collecting timing info
+2021-10-14 17:29:48.665827 (Thread-1): On model.fivetran_dbt.dbt_shipmentdata: Close
+2021-10-14 17:29:48.922893 (Thread-1): Database Error in model dbt_shipmentdata (models/example/dbt_shipmentdata.sql)
+  002140 (42601): SQL compilation error:
+  Unknown function TO_VARCHAT
+  compiled SQL at target/run/fivetran_dbt/models/example/dbt_shipmentdata.sql
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 183, in exception_handler
+    yield
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/cursor.py", line 721, in execute
+    Error.errorhandler_wrapper(
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 258, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 188, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 002140 (42601): SQL compilation error:
+Unknown function TO_VARCHAT
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 348, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 291, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 393, in run
+    return self.execute(compiled_node, manifest)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/run.py", line 249, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 65, in macro
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 226, in execute
+    return self.connections.execute(
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 131, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 354, in add_query
+    connection, cursor = super().add_query(
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 87, in add_query
+    return connection, cursor
+  File "/opt/anaconda3/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 200, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error in model dbt_shipmentdata (models/example/dbt_shipmentdata.sql)
+  002140 (42601): SQL compilation error:
+  Unknown function TO_VARCHAT
+  compiled SQL at target/run/fivetran_dbt/models/example/dbt_shipmentdata.sql
+2021-10-14 17:29:48.926183 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3796da8c-c6fd-4312-bd28-d9dca2471497', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa6a5d9fb80>]}
+2021-10-14 17:29:48.927250 (Thread-1): 19:29:48 | 1 of 1 ERROR creating table model SB_SHIPMENTS.dbt_shipmentdata...... [ERROR in 5.48s]
+2021-10-14 17:29:48.927826 (Thread-1): Finished running node model.fivetran_dbt.dbt_shipmentdata
+2021-10-14 17:29:48.931193 (MainThread): Acquiring new snowflake connection "master".
+2021-10-14 17:29:48.931867 (MainThread): 19:29:48 | 
+2021-10-14 17:29:48.932230 (MainThread): 19:29:48 | Finished running 1 table model in 23.25s.
+2021-10-14 17:29:48.932536 (MainThread): Connection 'master' was properly closed.
+2021-10-14 17:29:48.934202 (MainThread): Connection 'model.fivetran_dbt.dbt_shipmentdata' was properly closed.
+2021-10-14 17:29:48.942284 (MainThread): 
+2021-10-14 17:29:48.942554 (MainThread): Completed with 1 error and 0 warnings:
+2021-10-14 17:29:48.942821 (MainThread): 
+2021-10-14 17:29:48.943070 (MainThread): Database Error in model dbt_shipmentdata (models/example/dbt_shipmentdata.sql)
+2021-10-14 17:29:48.943295 (MainThread):   002140 (42601): SQL compilation error:
+2021-10-14 17:29:48.943521 (MainThread):   Unknown function TO_VARCHAT
+2021-10-14 17:29:48.943743 (MainThread):   compiled SQL at target/run/fivetran_dbt/models/example/dbt_shipmentdata.sql
+2021-10-14 17:29:48.944128 (MainThread): 
+Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+2021-10-14 17:29:48.944497 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa6a57ef430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa6a58458b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa6a5d8f0d0>]}
+2021-10-14 17:29:48.944791 (MainThread): Flushing usage events
+2021-10-14 17:30:01.711041 (MainThread): Running with dbt=0.21.0
+2021-10-14 17:30:03.874423 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/Users/jonas.albrecht/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-10-14 17:30:03.877574 (MainThread): Tracking: tracking
+2021-10-14 17:30:03.879101 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf9ff40130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf9ce15910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf9ff4fc10>]}
+2021-10-14 17:30:03.896518 (MainThread): Partial parsing not enabled
+2021-10-14 17:30:03.922209 (MainThread): Parsing macros/catalog.sql
+2021-10-14 17:30:03.925387 (MainThread): Parsing macros/adapters.sql
+2021-10-14 17:30:03.978123 (MainThread): Parsing macros/materializations/merge.sql
+2021-10-14 17:30:03.982916 (MainThread): Parsing macros/materializations/seed.sql
+2021-10-14 17:30:03.988496 (MainThread): Parsing macros/materializations/view.sql
+2021-10-14 17:30:03.990082 (MainThread): Parsing macros/materializations/table.sql
+2021-10-14 17:30:03.994970 (MainThread): Parsing macros/materializations/incremental.sql
+2021-10-14 17:30:04.005381 (MainThread): Parsing macros/core.sql
+2021-10-14 17:30:04.010018 (MainThread): Parsing macros/materializations/test.sql
+2021-10-14 17:30:04.018250 (MainThread): Parsing macros/materializations/helpers.sql
+2021-10-14 17:30:04.031069 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-10-14 17:30:04.033086 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-10-14 17:30:04.053789 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-10-14 17:30:04.096338 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-10-14 17:30:04.126526 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-10-14 17:30:04.129012 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-10-14 17:30:04.141427 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2021-10-14 17:30:04.167648 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-10-14 17:30:04.189114 (MainThread): Parsing macros/materializations/table/table.sql
+2021-10-14 17:30:04.201305 (MainThread): Parsing macros/materializations/view/view.sql
+2021-10-14 17:30:04.216037 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-10-14 17:30:04.220744 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-10-14 17:30:04.222531 (MainThread): Parsing macros/etc/query.sql
+2021-10-14 17:30:04.223776 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-10-14 17:30:04.227617 (MainThread): Parsing macros/etc/datetime.sql
+2021-10-14 17:30:04.243956 (MainThread): Parsing macros/etc/where_subquery.sql
+2021-10-14 17:30:04.247118 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-10-14 17:30:04.250169 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-10-14 17:30:04.252063 (MainThread): Parsing macros/adapters/common.sql
+2021-10-14 17:30:04.337962 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-10-14 17:30:04.340105 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-10-14 17:30:04.341765 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-10-14 17:30:04.344834 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-10-14 17:30:04.589241 (MainThread): Acquiring new snowflake connection "model.fivetran_dbt.dbt_shipmentdata".
+2021-10-14 17:30:04.633234 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-14 17:30:04.635360 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-14 17:30:04.653831 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1ea5bd75-efea-46ea-b1ba-813b4e4b5c79', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fafa016b2e0>]}
+2021-10-14 17:30:04.660953 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2021-10-14 17:30:04.661478 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1ea5bd75-efea-46ea-b1ba-813b4e4b5c79', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf9ffb5970>]}
+2021-10-14 17:30:04.661804 (MainThread): Found 1 model, 2 tests, 0 snapshots, 0 analyses, 172 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-10-14 17:30:04.663422 (MainThread): 
+2021-10-14 17:30:04.663808 (MainThread): Acquiring new snowflake connection "master".
+2021-10-14 17:30:04.664678 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_SB_DATABASE".
+2021-10-14 17:30:04.679277 (ThreadPoolExecutor-0_0): Using snowflake connection "list_SB_DATABASE".
+2021-10-14 17:30:04.679485 (ThreadPoolExecutor-0_0): On list_SB_DATABASE: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_SB_DATABASE"} */
+
+    show terse schemas in database SB_DATABASE
+    limit 10000
+2021-10-14 17:30:04.679640 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-10-14 17:30:04.712211 (ThreadPoolExecutor-0_0): Loading KWallet
+2021-10-14 17:30:04.713746 (ThreadPoolExecutor-0_0): Loading SecretService
+2021-10-14 17:30:04.715091 (ThreadPoolExecutor-0_0): Loading Windows
+2021-10-14 17:30:04.716789 (ThreadPoolExecutor-0_0): Loading chainer
+2021-10-14 17:30:04.717701 (ThreadPoolExecutor-0_0): Loading macOS
+2021-10-14 17:30:10.332943 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 9 in 5.65 seconds
+2021-10-14 17:30:10.337662 (ThreadPoolExecutor-0_0): On list_SB_DATABASE: Close
+2021-10-14 17:30:10.522793 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_SB_DATABASE_SB_SHIPMENTS".
+2021-10-14 17:30:10.531932 (ThreadPoolExecutor-1_0): Using snowflake connection "list_SB_DATABASE_SB_SHIPMENTS".
+2021-10-14 17:30:10.532157 (ThreadPoolExecutor-1_0): On list_SB_DATABASE_SB_SHIPMENTS: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_SB_DATABASE_SB_SHIPMENTS"} */
+
+    show terse objects in SB_DATABASE.SB_SHIPMENTS
+2021-10-14 17:30:10.532334 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-10-14 17:30:16.213640 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 7 in 5.68 seconds
+2021-10-14 17:30:16.218237 (ThreadPoolExecutor-1_0): On list_SB_DATABASE_SB_SHIPMENTS: Close
+2021-10-14 17:30:16.526982 (MainThread): 19:30:16 | Concurrency: 5 threads (target='dev')
+2021-10-14 17:30:16.527471 (MainThread): 19:30:16 | 
+2021-10-14 17:30:16.530391 (Thread-1): Began running node model.fivetran_dbt.dbt_shipmentdata
+2021-10-14 17:30:16.531380 (Thread-1): 19:30:16 | 1 of 1 START table model SB_SHIPMENTS.dbt_shipmentdata............... [RUN]
+2021-10-14 17:30:16.532127 (Thread-1): Acquiring new snowflake connection "model.fivetran_dbt.dbt_shipmentdata".
+2021-10-14 17:30:16.532532 (Thread-1): Compiling model.fivetran_dbt.dbt_shipmentdata
+2021-10-14 17:30:16.541007 (Thread-1): Writing injected SQL for node "model.fivetran_dbt.dbt_shipmentdata"
+2021-10-14 17:30:16.541805 (Thread-1): finished collecting timing info
+2021-10-14 17:30:16.615723 (Thread-1): Writing runtime SQL for node "model.fivetran_dbt.dbt_shipmentdata"
+2021-10-14 17:30:16.624246 (Thread-1): Using snowflake connection "model.fivetran_dbt.dbt_shipmentdata".
+2021-10-14 17:30:16.624594 (Thread-1): On model.fivetran_dbt.dbt_shipmentdata: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.fivetran_dbt.dbt_shipmentdata"} */
+
+
+      create or replace transient table SB_DATABASE.SB_SHIPMENTS.dbt_shipmentdata  as
+      (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+
+
+select TOP 6
+    TO_VARCHAR(ARRIVAL_DATE) AS ARRIVAL_DATE
+from sb_shipments.shipments_silver_old
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+      );
+2021-10-14 17:30:16.625103 (Thread-1): Opening a new connection, currently in state closed
+2021-10-14 17:30:24.134807 (Thread-1): SQL status: SUCCESS 1 in 7.51 seconds
+2021-10-14 17:30:24.174552 (Thread-1): finished collecting timing info
+2021-10-14 17:30:24.175377 (Thread-1): On model.fivetran_dbt.dbt_shipmentdata: Close
+2021-10-14 17:30:24.371599 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1ea5bd75-efea-46ea-b1ba-813b4e4b5c79', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fafa0578100>]}
+2021-10-14 17:30:24.375589 (Thread-1): 19:30:24 | 1 of 1 OK created table model SB_SHIPMENTS.dbt_shipmentdata.......... [SUCCESS 1 in 7.84s]
+2021-10-14 17:30:24.379144 (Thread-1): Finished running node model.fivetran_dbt.dbt_shipmentdata
+2021-10-14 17:30:24.382865 (MainThread): Acquiring new snowflake connection "master".
+2021-10-14 17:30:24.383814 (MainThread): 19:30:24 | 
+2021-10-14 17:30:24.384304 (MainThread): 19:30:24 | Finished running 1 table model in 19.72s.
+2021-10-14 17:30:24.384724 (MainThread): Connection 'master' was properly closed.
+2021-10-14 17:30:24.385094 (MainThread): Connection 'model.fivetran_dbt.dbt_shipmentdata' was properly closed.
+2021-10-14 17:30:24.396700 (MainThread): 
+2021-10-14 17:30:24.397278 (MainThread): Completed successfully
+2021-10-14 17:30:24.397731 (MainThread): 
+Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+2021-10-14 17:30:24.398528 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fafa012bf40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fafa016bc70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fafa04ec760>]}
+2021-10-14 17:30:24.399153 (MainThread): Flushing usage events
+2021-10-14 17:32:41.267906 (MainThread): Running with dbt=0.21.0
+2021-10-14 17:32:43.685350 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/Users/jonas.albrecht/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-10-14 17:32:43.689680 (MainThread): Tracking: tracking
+2021-10-14 17:32:43.690526 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7efd880640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7efa610cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7efd88dd00>]}
+2021-10-14 17:32:43.706938 (MainThread): Partial parsing not enabled
+2021-10-14 17:32:43.731763 (MainThread): Parsing macros/catalog.sql
+2021-10-14 17:32:43.734937 (MainThread): Parsing macros/adapters.sql
+2021-10-14 17:32:43.775370 (MainThread): Parsing macros/materializations/merge.sql
+2021-10-14 17:32:43.779309 (MainThread): Parsing macros/materializations/seed.sql
+2021-10-14 17:32:43.784034 (MainThread): Parsing macros/materializations/view.sql
+2021-10-14 17:32:43.785522 (MainThread): Parsing macros/materializations/table.sql
+2021-10-14 17:32:43.789024 (MainThread): Parsing macros/materializations/incremental.sql
+2021-10-14 17:32:43.798526 (MainThread): Parsing macros/core.sql
+2021-10-14 17:32:43.804299 (MainThread): Parsing macros/materializations/test.sql
+2021-10-14 17:32:43.810971 (MainThread): Parsing macros/materializations/helpers.sql
+2021-10-14 17:32:43.823012 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-10-14 17:32:43.824696 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-10-14 17:32:43.842383 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-10-14 17:32:43.876803 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-10-14 17:32:43.900539 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-10-14 17:32:43.902350 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-10-14 17:32:43.912633 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2021-10-14 17:32:43.933750 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-10-14 17:32:43.948094 (MainThread): Parsing macros/materializations/table/table.sql
+2021-10-14 17:32:43.956996 (MainThread): Parsing macros/materializations/view/view.sql
+2021-10-14 17:32:43.964772 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-10-14 17:32:43.969707 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-10-14 17:32:43.971267 (MainThread): Parsing macros/etc/query.sql
+2021-10-14 17:32:43.972349 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-10-14 17:32:43.973851 (MainThread): Parsing macros/etc/datetime.sql
+2021-10-14 17:32:43.982361 (MainThread): Parsing macros/etc/where_subquery.sql
+2021-10-14 17:32:43.984341 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-10-14 17:32:43.986814 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-10-14 17:32:43.988374 (MainThread): Parsing macros/adapters/common.sql
+2021-10-14 17:32:44.046413 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-10-14 17:32:44.048094 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-10-14 17:32:44.049476 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-10-14 17:32:44.050995 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-10-14 17:32:44.250913 (MainThread): Acquiring new snowflake connection "model.fivetran_dbt.dbt_shipmentdata".
+2021-10-14 17:32:44.286364 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-14 17:32:44.288180 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-14 17:32:44.305038 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '828f0654-f4cc-4e14-ae84-eec40645d8b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7efd947070>]}
+2021-10-14 17:32:44.310621 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2021-10-14 17:32:44.311030 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '828f0654-f4cc-4e14-ae84-eec40645d8b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7efd955490>]}
+2021-10-14 17:32:44.311280 (MainThread): Found 1 model, 2 tests, 0 snapshots, 0 analyses, 172 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-10-14 17:32:44.312565 (MainThread): 
+2021-10-14 17:32:44.312974 (MainThread): Acquiring new snowflake connection "master".
+2021-10-14 17:32:44.313817 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_SB_DATABASE".
+2021-10-14 17:32:44.327233 (ThreadPoolExecutor-0_0): Using snowflake connection "list_SB_DATABASE".
+2021-10-14 17:32:44.327417 (ThreadPoolExecutor-0_0): On list_SB_DATABASE: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_SB_DATABASE"} */
+
+    show terse schemas in database SB_DATABASE
+    limit 10000
+2021-10-14 17:32:44.327549 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-10-14 17:32:44.367329 (ThreadPoolExecutor-0_0): Loading KWallet
+2021-10-14 17:32:44.368762 (ThreadPoolExecutor-0_0): Loading SecretService
+2021-10-14 17:32:44.369874 (ThreadPoolExecutor-0_0): Loading Windows
+2021-10-14 17:32:44.371401 (ThreadPoolExecutor-0_0): Loading chainer
+2021-10-14 17:32:44.372459 (ThreadPoolExecutor-0_0): Loading macOS
+2021-10-14 17:32:54.672489 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 9 in 10.34 seconds
+2021-10-14 17:32:54.678621 (ThreadPoolExecutor-0_0): On list_SB_DATABASE: Close
+2021-10-14 17:32:54.883116 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_SB_DATABASE_SB_SHIPMENTS".
+2021-10-14 17:32:54.893150 (ThreadPoolExecutor-1_0): Using snowflake connection "list_SB_DATABASE_SB_SHIPMENTS".
+2021-10-14 17:32:54.893342 (ThreadPoolExecutor-1_0): On list_SB_DATABASE_SB_SHIPMENTS: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_SB_DATABASE_SB_SHIPMENTS"} */
+
+    show terse objects in SB_DATABASE.SB_SHIPMENTS
+2021-10-14 17:32:54.893484 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-10-14 17:32:59.586032 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 7 in 4.69 seconds
+2021-10-14 17:32:59.590028 (ThreadPoolExecutor-1_0): On list_SB_DATABASE_SB_SHIPMENTS: Close
+2021-10-14 17:32:59.823868 (MainThread): 19:32:59 | Concurrency: 5 threads (target='dev')
+2021-10-14 17:32:59.824489 (MainThread): 19:32:59 | 
+2021-10-14 17:32:59.830129 (Thread-1): Began running node model.fivetran_dbt.dbt_shipmentdata
+2021-10-14 17:32:59.830925 (Thread-1): 19:32:59 | 1 of 1 START table model SB_SHIPMENTS.dbt_shipmentdata............... [RUN]
+2021-10-14 17:32:59.831572 (Thread-1): Acquiring new snowflake connection "model.fivetran_dbt.dbt_shipmentdata".
+2021-10-14 17:32:59.831993 (Thread-1): Compiling model.fivetran_dbt.dbt_shipmentdata
+2021-10-14 17:32:59.838446 (Thread-1): Writing injected SQL for node "model.fivetran_dbt.dbt_shipmentdata"
+2021-10-14 17:32:59.839450 (Thread-1): finished collecting timing info
+2021-10-14 17:32:59.895907 (Thread-1): Writing runtime SQL for node "model.fivetran_dbt.dbt_shipmentdata"
+2021-10-14 17:32:59.897667 (Thread-1): Using snowflake connection "model.fivetran_dbt.dbt_shipmentdata".
+2021-10-14 17:32:59.897922 (Thread-1): On model.fivetran_dbt.dbt_shipmentdata: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.fivetran_dbt.dbt_shipmentdata"} */
+
+
+      create or replace transient table SB_DATABASE.SB_SHIPMENTS.dbt_shipmentdata  as
+      (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+
+
+select TOP 6
+    CONVERT(varbinary(256),CAST(CONVERT(DATETIME,ARRIVAL_DATE)) AS TIMESTAMP)) AS ARRIVAL_DATE
+from sb_shipments.shipments_silver_old
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+      );
+2021-10-14 17:32:59.898387 (Thread-1): Opening a new connection, currently in state closed
+2021-10-14 17:33:05.011695 (Thread-1): Snowflake query id: 019f9b5d-3200-a96a-0000-b5050047136e
+2021-10-14 17:33:05.012162 (Thread-1): Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 15 at position 62 unexpected ')'.
+2021-10-14 17:33:05.012630 (Thread-1): finished collecting timing info
+2021-10-14 17:33:05.013007 (Thread-1): On model.fivetran_dbt.dbt_shipmentdata: Close
+2021-10-14 17:33:05.138660 (Thread-1): Database Error in model dbt_shipmentdata (models/example/dbt_shipmentdata.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 15 at position 62 unexpected ')'.
+  compiled SQL at target/run/fivetran_dbt/models/example/dbt_shipmentdata.sql
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 183, in exception_handler
+    yield
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/cursor.py", line 721, in execute
+    Error.errorhandler_wrapper(
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 258, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 188, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 001003 (42000): SQL compilation error:
+syntax error line 15 at position 62 unexpected ')'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 348, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 291, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 393, in run
+    return self.execute(compiled_node, manifest)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/run.py", line 249, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 65, in macro
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 226, in execute
+    return self.connections.execute(
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 131, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 354, in add_query
+    connection, cursor = super().add_query(
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 87, in add_query
+    return connection, cursor
+  File "/opt/anaconda3/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 200, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error in model dbt_shipmentdata (models/example/dbt_shipmentdata.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 15 at position 62 unexpected ')'.
+  compiled SQL at target/run/fivetran_dbt/models/example/dbt_shipmentdata.sql
+2021-10-14 17:33:05.143614 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '828f0654-f4cc-4e14-ae84-eec40645d8b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7efdda07c0>]}
+2021-10-14 17:33:05.144443 (Thread-1): 19:33:05 | 1 of 1 ERROR creating table model SB_SHIPMENTS.dbt_shipmentdata...... [ERROR in 5.31s]
+2021-10-14 17:33:05.144719 (Thread-1): Finished running node model.fivetran_dbt.dbt_shipmentdata
+2021-10-14 17:33:05.147051 (MainThread): Acquiring new snowflake connection "master".
+2021-10-14 17:33:05.147549 (MainThread): 19:33:05 | 
+2021-10-14 17:33:05.147793 (MainThread): 19:33:05 | Finished running 1 table model in 20.83s.
+2021-10-14 17:33:05.148034 (MainThread): Connection 'master' was properly closed.
+2021-10-14 17:33:05.148182 (MainThread): Connection 'model.fivetran_dbt.dbt_shipmentdata' was properly closed.
+2021-10-14 17:33:05.154610 (MainThread): 
+2021-10-14 17:33:05.154852 (MainThread): Completed with 1 error and 0 warnings:
+2021-10-14 17:33:05.155103 (MainThread): 
+2021-10-14 17:33:05.155369 (MainThread): Database Error in model dbt_shipmentdata (models/example/dbt_shipmentdata.sql)
+2021-10-14 17:33:05.155612 (MainThread):   001003 (42000): SQL compilation error:
+2021-10-14 17:33:05.155894 (MainThread):   syntax error line 15 at position 62 unexpected ')'.
+2021-10-14 17:33:05.156190 (MainThread):   compiled SQL at target/run/fivetran_dbt/models/example/dbt_shipmentdata.sql
+2021-10-14 17:33:05.156491 (MainThread): 
+Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+2021-10-14 17:33:05.156981 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7efdbfa8e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7efd9a9280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7efdd9d1f0>]}
+2021-10-14 17:33:05.157283 (MainThread): Flushing usage events
+2021-10-14 17:33:42.294975 (MainThread): Running with dbt=0.21.0
+2021-10-14 17:33:44.581800 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/Users/jonas.albrecht/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-10-14 17:33:44.585766 (MainThread): Tracking: tracking
+2021-10-14 17:33:44.586810 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9acff001f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9acce16910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9acff0fc10>]}
+2021-10-14 17:33:44.609800 (MainThread): Partial parsing not enabled
+2021-10-14 17:33:44.641291 (MainThread): Parsing macros/catalog.sql
+2021-10-14 17:33:44.645158 (MainThread): Parsing macros/adapters.sql
+2021-10-14 17:33:44.712825 (MainThread): Parsing macros/materializations/merge.sql
+2021-10-14 17:33:44.718072 (MainThread): Parsing macros/materializations/seed.sql
+2021-10-14 17:33:44.724693 (MainThread): Parsing macros/materializations/view.sql
+2021-10-14 17:33:44.726592 (MainThread): Parsing macros/materializations/table.sql
+2021-10-14 17:33:44.730630 (MainThread): Parsing macros/materializations/incremental.sql
+2021-10-14 17:33:44.741943 (MainThread): Parsing macros/core.sql
+2021-10-14 17:33:44.746850 (MainThread): Parsing macros/materializations/test.sql
+2021-10-14 17:33:44.755588 (MainThread): Parsing macros/materializations/helpers.sql
+2021-10-14 17:33:44.769187 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-10-14 17:33:44.771753 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-10-14 17:33:44.796775 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-10-14 17:33:44.847358 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-10-14 17:33:44.881952 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-10-14 17:33:44.884590 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-10-14 17:33:44.900147 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2021-10-14 17:33:44.930139 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-10-14 17:33:44.948583 (MainThread): Parsing macros/materializations/table/table.sql
+2021-10-14 17:33:44.960936 (MainThread): Parsing macros/materializations/view/view.sql
+2021-10-14 17:33:44.974219 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-10-14 17:33:44.979204 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-10-14 17:33:44.981087 (MainThread): Parsing macros/etc/query.sql
+2021-10-14 17:33:44.982395 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-10-14 17:33:44.984308 (MainThread): Parsing macros/etc/datetime.sql
+2021-10-14 17:33:45.002570 (MainThread): Parsing macros/etc/where_subquery.sql
+2021-10-14 17:33:45.006984 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-10-14 17:33:45.013861 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-10-14 17:33:45.016847 (MainThread): Parsing macros/adapters/common.sql
+2021-10-14 17:33:45.104685 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-10-14 17:33:45.107807 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-10-14 17:33:45.110205 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-10-14 17:33:45.112084 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-10-14 17:33:45.402421 (MainThread): 1699: statically parsed example/dbt_shipmentdata.sql
+2021-10-14 17:33:45.402763 (MainThread): Acquiring new snowflake connection "model.fivetran_dbt.dbt_shipmentdata".
+2021-10-14 17:33:45.418469 (MainThread): Sending event: {'category': 'dbt', 'action': 'experimental_parser', 'label': 'e1cd65ee-8a74-4f7a-9cb2-9dc9d9878398', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9acffd6490>]}
+2021-10-14 17:33:45.448550 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-14 17:33:45.450821 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-14 17:33:45.468376 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e1cd65ee-8a74-4f7a-9cb2-9dc9d9878398', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9ad002ac40>]}
+2021-10-14 17:33:45.474630 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2021-10-14 17:33:45.475174 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e1cd65ee-8a74-4f7a-9cb2-9dc9d9878398', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9acff76970>]}
+2021-10-14 17:33:45.475503 (MainThread): Found 1 model, 2 tests, 0 snapshots, 0 analyses, 172 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-10-14 17:33:45.477107 (MainThread): 
+2021-10-14 17:33:45.477512 (MainThread): Acquiring new snowflake connection "master".
+2021-10-14 17:33:45.478450 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_SB_DATABASE".
+2021-10-14 17:33:45.494185 (ThreadPoolExecutor-0_0): Using snowflake connection "list_SB_DATABASE".
+2021-10-14 17:33:45.494410 (ThreadPoolExecutor-0_0): On list_SB_DATABASE: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_SB_DATABASE"} */
+
+    show terse schemas in database SB_DATABASE
+    limit 10000
+2021-10-14 17:33:45.494582 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-10-14 17:33:45.529898 (ThreadPoolExecutor-0_0): Loading KWallet
+2021-10-14 17:33:45.531630 (ThreadPoolExecutor-0_0): Loading SecretService
+2021-10-14 17:33:45.533091 (ThreadPoolExecutor-0_0): Loading Windows
+2021-10-14 17:33:45.534910 (ThreadPoolExecutor-0_0): Loading chainer
+2021-10-14 17:33:45.536047 (ThreadPoolExecutor-0_0): Loading macOS
+2021-10-14 17:33:51.577650 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 9 in 6.08 seconds
+2021-10-14 17:33:51.584621 (ThreadPoolExecutor-0_0): On list_SB_DATABASE: Close
+2021-10-14 17:33:51.747471 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_SB_DATABASE_SB_SHIPMENTS".
+2021-10-14 17:33:51.768506 (ThreadPoolExecutor-1_0): Using snowflake connection "list_SB_DATABASE_SB_SHIPMENTS".
+2021-10-14 17:33:51.768965 (ThreadPoolExecutor-1_0): On list_SB_DATABASE_SB_SHIPMENTS: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_SB_DATABASE_SB_SHIPMENTS"} */
+
+    show terse objects in SB_DATABASE.SB_SHIPMENTS
+2021-10-14 17:33:51.769359 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-10-14 17:33:58.827980 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 7 in 7.06 seconds
+2021-10-14 17:33:58.832921 (ThreadPoolExecutor-1_0): On list_SB_DATABASE_SB_SHIPMENTS: Close
+2021-10-14 17:33:58.969884 (MainThread): 19:33:58 | Concurrency: 5 threads (target='dev')
+2021-10-14 17:33:58.970329 (MainThread): 19:33:58 | 
+2021-10-14 17:33:58.973201 (Thread-1): Began running node model.fivetran_dbt.dbt_shipmentdata
+2021-10-14 17:33:58.973809 (Thread-1): 19:33:58 | 1 of 1 START table model SB_SHIPMENTS.dbt_shipmentdata............... [RUN]
+2021-10-14 17:33:58.974464 (Thread-1): Acquiring new snowflake connection "model.fivetran_dbt.dbt_shipmentdata".
+2021-10-14 17:33:58.974885 (Thread-1): Compiling model.fivetran_dbt.dbt_shipmentdata
+2021-10-14 17:33:58.980673 (Thread-1): Writing injected SQL for node "model.fivetran_dbt.dbt_shipmentdata"
+2021-10-14 17:33:58.981474 (Thread-1): finished collecting timing info
+2021-10-14 17:33:59.034847 (Thread-1): Writing runtime SQL for node "model.fivetran_dbt.dbt_shipmentdata"
+2021-10-14 17:33:59.037043 (Thread-1): Using snowflake connection "model.fivetran_dbt.dbt_shipmentdata".
+2021-10-14 17:33:59.037328 (Thread-1): On model.fivetran_dbt.dbt_shipmentdata: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.fivetran_dbt.dbt_shipmentdata"} */
+
+
+      create or replace transient table SB_DATABASE.SB_SHIPMENTS.dbt_shipmentdata  as
+      (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+
+
+select TOP 6
+    CONVERT(varbinary(256),CAST(CONVERT(DATETIME,ARRIVAL_DATE)) AS TIMESTAMP) AS ARRIVAL_DATE
+from sb_shipments.shipments_silver_old
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+      );
+2021-10-14 17:33:59.037687 (Thread-1): Opening a new connection, currently in state closed
+2021-10-14 17:34:05.907386 (Thread-1): Snowflake query id: 019f9b5e-3200-a96a-0000-b505004713ba
+2021-10-14 17:34:05.908242 (Thread-1): Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 15 at position 62 unexpected ')'.
+syntax error line 15 at position 78 unexpected 'AS'.
+2021-10-14 17:34:05.908865 (Thread-1): finished collecting timing info
+2021-10-14 17:34:05.909383 (Thread-1): On model.fivetran_dbt.dbt_shipmentdata: Close
+2021-10-14 17:34:06.114596 (Thread-1): Database Error in model dbt_shipmentdata (models/example/dbt_shipmentdata.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 15 at position 62 unexpected ')'.
+  syntax error line 15 at position 78 unexpected 'AS'.
+  compiled SQL at target/run/fivetran_dbt/models/example/dbt_shipmentdata.sql
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 183, in exception_handler
+    yield
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/cursor.py", line 721, in execute
+    Error.errorhandler_wrapper(
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 258, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 188, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 001003 (42000): SQL compilation error:
+syntax error line 15 at position 62 unexpected ')'.
+syntax error line 15 at position 78 unexpected 'AS'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 348, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 291, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 393, in run
+    return self.execute(compiled_node, manifest)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/run.py", line 249, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 65, in macro
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 226, in execute
+    return self.connections.execute(
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 131, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 354, in add_query
+    connection, cursor = super().add_query(
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 87, in add_query
+    return connection, cursor
+  File "/opt/anaconda3/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 200, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error in model dbt_shipmentdata (models/example/dbt_shipmentdata.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 15 at position 62 unexpected ')'.
+  syntax error line 15 at position 78 unexpected 'AS'.
+  compiled SQL at target/run/fivetran_dbt/models/example/dbt_shipmentdata.sql
+2021-10-14 17:34:06.117390 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e1cd65ee-8a74-4f7a-9cb2-9dc9d9878398', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9ad046d100>]}
+2021-10-14 17:34:06.118325 (Thread-1): 19:34:06 | 1 of 1 ERROR creating table model SB_SHIPMENTS.dbt_shipmentdata...... [ERROR in 7.14s]
+2021-10-14 17:34:06.118637 (Thread-1): Finished running node model.fivetran_dbt.dbt_shipmentdata
+2021-10-14 17:34:06.121732 (MainThread): Acquiring new snowflake connection "master".
+2021-10-14 17:34:06.122387 (MainThread): 19:34:06 | 
+2021-10-14 17:34:06.122660 (MainThread): 19:34:06 | Finished running 1 table model in 20.64s.
+2021-10-14 17:34:06.122918 (MainThread): Connection 'master' was properly closed.
+2021-10-14 17:34:06.123126 (MainThread): Connection 'model.fivetran_dbt.dbt_shipmentdata' was properly closed.
+2021-10-14 17:34:06.131883 (MainThread): 
+2021-10-14 17:34:06.132190 (MainThread): Completed with 1 error and 0 warnings:
+2021-10-14 17:34:06.132454 (MainThread): 
+2021-10-14 17:34:06.132706 (MainThread): Database Error in model dbt_shipmentdata (models/example/dbt_shipmentdata.sql)
+2021-10-14 17:34:06.132936 (MainThread):   001003 (42000): SQL compilation error:
+2021-10-14 17:34:06.133158 (MainThread):   syntax error line 15 at position 62 unexpected ')'.
+2021-10-14 17:34:06.133376 (MainThread):   syntax error line 15 at position 78 unexpected 'AS'.
+2021-10-14 17:34:06.133593 (MainThread):   compiled SQL at target/run/fivetran_dbt/models/example/dbt_shipmentdata.sql
+2021-10-14 17:34:06.133828 (MainThread): 
+Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+2021-10-14 17:34:06.134263 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9ad03c0700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9ad002a070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9ad03ee760>]}
+2021-10-14 17:34:06.134608 (MainThread): Flushing usage events
+2021-10-14 17:37:13.994113 (MainThread): Running with dbt=0.21.0
+2021-10-14 17:37:17.101057 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/Users/jonas.albrecht/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-10-14 17:37:17.107453 (MainThread): Tracking: tracking
+2021-10-14 17:37:17.108963 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fda8c76f250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fda89610970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fda8c74dd30>]}
+2021-10-14 17:37:17.153671 (MainThread): Partial parsing not enabled
+2021-10-14 17:37:17.247930 (MainThread): Parsing macros/catalog.sql
+2021-10-14 17:37:17.263114 (MainThread): Parsing macros/adapters.sql
+2021-10-14 17:37:17.485504 (MainThread): Parsing macros/materializations/merge.sql
+2021-10-14 17:37:17.492023 (MainThread): Parsing macros/materializations/seed.sql
+2021-10-14 17:37:17.509599 (MainThread): Parsing macros/materializations/view.sql
+2021-10-14 17:37:17.511886 (MainThread): Parsing macros/materializations/table.sql
+2021-10-14 17:37:17.517914 (MainThread): Parsing macros/materializations/incremental.sql
+2021-10-14 17:37:17.541558 (MainThread): Parsing macros/core.sql
+2021-10-14 17:37:17.548262 (MainThread): Parsing macros/materializations/test.sql
+2021-10-14 17:37:17.561377 (MainThread): Parsing macros/materializations/helpers.sql
+2021-10-14 17:37:17.589043 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-10-14 17:37:17.593983 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-10-14 17:37:17.629816 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-10-14 17:37:17.692040 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-10-14 17:37:17.738886 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-10-14 17:37:17.741817 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-10-14 17:37:17.761140 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2021-10-14 17:37:17.811715 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-10-14 17:37:17.878495 (MainThread): Parsing macros/materializations/table/table.sql
+2021-10-14 17:37:17.909818 (MainThread): Parsing macros/materializations/view/view.sql
+2021-10-14 17:37:17.929548 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-10-14 17:37:17.979432 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-10-14 17:37:17.990098 (MainThread): Parsing macros/etc/query.sql
+2021-10-14 17:37:17.993507 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-10-14 17:37:18.008555 (MainThread): Parsing macros/etc/datetime.sql
+2021-10-14 17:37:18.053068 (MainThread): Parsing macros/etc/where_subquery.sql
+2021-10-14 17:37:18.057400 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-10-14 17:37:18.061524 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-10-14 17:37:18.071618 (MainThread): Parsing macros/adapters/common.sql
+2021-10-14 17:37:18.251670 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-10-14 17:37:18.254614 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-10-14 17:37:18.256660 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-10-14 17:37:18.259285 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-10-14 17:37:18.846322 (MainThread): Acquiring new snowflake connection "model.fivetran_dbt.dbt_shipmentdata".
+2021-10-14 17:37:18.989502 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-14 17:37:18.993822 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-14 17:37:19.056181 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '244e40f6-ed43-45ab-869e-df7295517511', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fda8c7b2100>]}
+2021-10-14 17:37:19.071632 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2021-10-14 17:37:19.072727 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '244e40f6-ed43-45ab-869e-df7295517511', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fda8c807070>]}
+2021-10-14 17:37:19.073720 (MainThread): Found 1 model, 2 tests, 0 snapshots, 0 analyses, 172 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-10-14 17:37:19.078823 (MainThread): 
+2021-10-14 17:37:19.079580 (MainThread): Acquiring new snowflake connection "master".
+2021-10-14 17:37:19.080839 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_SB_DATABASE".
+2021-10-14 17:37:19.125412 (ThreadPoolExecutor-0_0): Using snowflake connection "list_SB_DATABASE".
+2021-10-14 17:37:19.126182 (ThreadPoolExecutor-0_0): On list_SB_DATABASE: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_SB_DATABASE"} */
+
+    show terse schemas in database SB_DATABASE
+    limit 10000
+2021-10-14 17:37:19.126658 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-10-14 17:37:19.193523 (ThreadPoolExecutor-0_0): Loading KWallet
+2021-10-14 17:37:19.198980 (ThreadPoolExecutor-0_0): Loading SecretService
+2021-10-14 17:37:19.201497 (ThreadPoolExecutor-0_0): Loading Windows
+2021-10-14 17:37:19.206173 (ThreadPoolExecutor-0_0): Loading chainer
+2021-10-14 17:37:19.208171 (ThreadPoolExecutor-0_0): Loading macOS
+2021-10-14 17:37:31.091299 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 9 in 11.96 seconds
+2021-10-14 17:37:31.098043 (ThreadPoolExecutor-0_0): On list_SB_DATABASE: Close
+2021-10-14 17:37:31.268386 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_SB_DATABASE_SB_SHIPMENTS".
+2021-10-14 17:37:31.282885 (ThreadPoolExecutor-1_0): Using snowflake connection "list_SB_DATABASE_SB_SHIPMENTS".
+2021-10-14 17:37:31.283146 (ThreadPoolExecutor-1_0): On list_SB_DATABASE_SB_SHIPMENTS: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_SB_DATABASE_SB_SHIPMENTS"} */
+
+    show terse objects in SB_DATABASE.SB_SHIPMENTS
+2021-10-14 17:37:31.283437 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-10-14 17:37:36.398045 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 7 in 5.11 seconds
+2021-10-14 17:37:36.402330 (ThreadPoolExecutor-1_0): On list_SB_DATABASE_SB_SHIPMENTS: Close
+2021-10-14 17:37:36.532595 (MainThread): 19:37:36 | Concurrency: 5 threads (target='dev')
+2021-10-14 17:37:36.532954 (MainThread): 19:37:36 | 
+2021-10-14 17:37:36.535379 (Thread-1): Began running node model.fivetran_dbt.dbt_shipmentdata
+2021-10-14 17:37:36.535881 (Thread-1): 19:37:36 | 1 of 1 START table model SB_SHIPMENTS.dbt_shipmentdata............... [RUN]
+2021-10-14 17:37:36.536368 (Thread-1): Acquiring new snowflake connection "model.fivetran_dbt.dbt_shipmentdata".
+2021-10-14 17:37:36.536658 (Thread-1): Compiling model.fivetran_dbt.dbt_shipmentdata
+2021-10-14 17:37:36.541255 (Thread-1): Writing injected SQL for node "model.fivetran_dbt.dbt_shipmentdata"
+2021-10-14 17:37:36.542367 (Thread-1): finished collecting timing info
+2021-10-14 17:37:36.581158 (Thread-1): Writing runtime SQL for node "model.fivetran_dbt.dbt_shipmentdata"
+2021-10-14 17:37:36.582790 (Thread-1): Using snowflake connection "model.fivetran_dbt.dbt_shipmentdata".
+2021-10-14 17:37:36.583041 (Thread-1): On model.fivetran_dbt.dbt_shipmentdata: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.fivetran_dbt.dbt_shipmentdata"} */
+
+
+      create or replace transient table SB_DATABASE.SB_SHIPMENTS.dbt_shipmentdata  as
+      (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as(
+    select 0000000000000000FC7A2500 as id
+)
+
+select * from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+      );
+2021-10-14 17:37:36.583246 (Thread-1): Opening a new connection, currently in state closed
+2021-10-14 17:37:42.178294 (Thread-1): Snowflake query id: 019f9b61-3200-a96a-0000-b505004714ba
+2021-10-14 17:37:42.178891 (Thread-1): Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 13 at position 36 unexpected 'as'.
+syntax error line 16 at position 0 unexpected 'select'.
+2021-10-14 17:37:42.179743 (Thread-1): finished collecting timing info
+2021-10-14 17:37:42.180481 (Thread-1): On model.fivetran_dbt.dbt_shipmentdata: Close
+2021-10-14 17:37:42.318234 (Thread-1): Database Error in model dbt_shipmentdata (models/example/dbt_shipmentdata.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 13 at position 36 unexpected 'as'.
+  syntax error line 16 at position 0 unexpected 'select'.
+  compiled SQL at target/run/fivetran_dbt/models/example/dbt_shipmentdata.sql
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 183, in exception_handler
+    yield
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/cursor.py", line 721, in execute
+    Error.errorhandler_wrapper(
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 258, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 188, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 001003 (42000): SQL compilation error:
+syntax error line 13 at position 36 unexpected 'as'.
+syntax error line 16 at position 0 unexpected 'select'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 348, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 291, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 393, in run
+    return self.execute(compiled_node, manifest)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/run.py", line 249, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 65, in macro
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 226, in execute
+    return self.connections.execute(
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 131, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 354, in add_query
+    connection, cursor = super().add_query(
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 87, in add_query
+    return connection, cursor
+  File "/opt/anaconda3/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 200, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error in model dbt_shipmentdata (models/example/dbt_shipmentdata.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 13 at position 36 unexpected 'as'.
+  syntax error line 16 at position 0 unexpected 'select'.
+  compiled SQL at target/run/fivetran_dbt/models/example/dbt_shipmentdata.sql
+2021-10-14 17:37:42.322008 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '244e40f6-ed43-45ab-869e-df7295517511', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fda8cd1aaf0>]}
+2021-10-14 17:37:42.322872 (Thread-1): 19:37:42 | 1 of 1 ERROR creating table model SB_SHIPMENTS.dbt_shipmentdata...... [ERROR in 5.79s]
+2021-10-14 17:37:42.323164 (Thread-1): Finished running node model.fivetran_dbt.dbt_shipmentdata
+2021-10-14 17:37:42.327189 (MainThread): Acquiring new snowflake connection "master".
+2021-10-14 17:37:42.328359 (MainThread): 19:37:42 | 
+2021-10-14 17:37:42.328914 (MainThread): 19:37:42 | Finished running 1 table model in 23.25s.
+2021-10-14 17:37:42.329346 (MainThread): Connection 'master' was properly closed.
+2021-10-14 17:37:42.330806 (MainThread): Connection 'model.fivetran_dbt.dbt_shipmentdata' was properly closed.
+2021-10-14 17:37:42.355846 (MainThread): 
+2021-10-14 17:37:42.356318 (MainThread): Completed with 1 error and 0 warnings:
+2021-10-14 17:37:42.356692 (MainThread): 
+2021-10-14 17:37:42.357182 (MainThread): Database Error in model dbt_shipmentdata (models/example/dbt_shipmentdata.sql)
+2021-10-14 17:37:42.357590 (MainThread):   001003 (42000): SQL compilation error:
+2021-10-14 17:37:42.357963 (MainThread):   syntax error line 13 at position 36 unexpected 'as'.
+2021-10-14 17:37:42.358295 (MainThread):   syntax error line 16 at position 0 unexpected 'select'.
+2021-10-14 17:37:42.358519 (MainThread):   compiled SQL at target/run/fivetran_dbt/models/example/dbt_shipmentdata.sql
+2021-10-14 17:37:42.358870 (MainThread): 
+Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+2021-10-14 17:37:42.359455 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fda89610970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fda8c86a100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fda8c8eb760>]}
+2021-10-14 17:37:42.359965 (MainThread): Flushing usage events
+2021-10-14 17:38:46.969525 (MainThread): Running with dbt=0.21.0
+2021-10-14 17:38:49.513945 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/Users/jonas.albrecht/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-10-14 17:38:49.520163 (MainThread): Tracking: tracking
+2021-10-14 17:38:49.522556 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae9677a910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae93608d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae9674dcd0>]}
+2021-10-14 17:38:49.546694 (MainThread): Partial parsing not enabled
+2021-10-14 17:38:49.575997 (MainThread): Parsing macros/catalog.sql
+2021-10-14 17:38:49.582951 (MainThread): Parsing macros/adapters.sql
+2021-10-14 17:38:49.656851 (MainThread): Parsing macros/materializations/merge.sql
+2021-10-14 17:38:49.663117 (MainThread): Parsing macros/materializations/seed.sql
+2021-10-14 17:38:49.670158 (MainThread): Parsing macros/materializations/view.sql
+2021-10-14 17:38:49.672087 (MainThread): Parsing macros/materializations/table.sql
+2021-10-14 17:38:49.676499 (MainThread): Parsing macros/materializations/incremental.sql
+2021-10-14 17:38:49.692316 (MainThread): Parsing macros/core.sql
+2021-10-14 17:38:49.703451 (MainThread): Parsing macros/materializations/test.sql
+2021-10-14 17:38:49.716577 (MainThread): Parsing macros/materializations/helpers.sql
+2021-10-14 17:38:49.732584 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-10-14 17:38:49.734973 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-10-14 17:38:49.761696 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-10-14 17:38:49.821975 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-10-14 17:38:49.865292 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-10-14 17:38:49.868237 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-10-14 17:38:49.883225 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2021-10-14 17:38:49.921378 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-10-14 17:38:49.945350 (MainThread): Parsing macros/materializations/table/table.sql
+2021-10-14 17:38:49.958060 (MainThread): Parsing macros/materializations/view/view.sql
+2021-10-14 17:38:49.970353 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-10-14 17:38:49.976440 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-10-14 17:38:49.979077 (MainThread): Parsing macros/etc/query.sql
+2021-10-14 17:38:49.980660 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-10-14 17:38:49.982901 (MainThread): Parsing macros/etc/datetime.sql
+2021-10-14 17:38:50.003064 (MainThread): Parsing macros/etc/where_subquery.sql
+2021-10-14 17:38:50.006673 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-10-14 17:38:50.011975 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-10-14 17:38:50.014862 (MainThread): Parsing macros/adapters/common.sql
+2021-10-14 17:38:50.115164 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-10-14 17:38:50.119550 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-10-14 17:38:50.121711 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-10-14 17:38:50.123756 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-10-14 17:38:50.562115 (MainThread): Acquiring new snowflake connection "model.fivetran_dbt.dbt_shipmentdata".
+2021-10-14 17:38:50.710722 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-14 17:38:50.716416 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-14 17:38:50.744173 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b46793b8-79dc-4271-886a-e79e3430084f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae9686bb50>]}
+2021-10-14 17:38:50.752258 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2021-10-14 17:38:50.752912 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b46793b8-79dc-4271-886a-e79e3430084f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae96804f70>]}
+2021-10-14 17:38:50.753278 (MainThread): Found 1 model, 2 tests, 0 snapshots, 0 analyses, 172 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-10-14 17:38:50.755205 (MainThread): 
+2021-10-14 17:38:50.755717 (MainThread): Acquiring new snowflake connection "master".
+2021-10-14 17:38:50.756869 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_SB_DATABASE".
+2021-10-14 17:38:50.779873 (ThreadPoolExecutor-0_0): Using snowflake connection "list_SB_DATABASE".
+2021-10-14 17:38:50.780317 (ThreadPoolExecutor-0_0): On list_SB_DATABASE: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_SB_DATABASE"} */
+
+    show terse schemas in database SB_DATABASE
+    limit 10000
+2021-10-14 17:38:50.780566 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-10-14 17:38:50.815355 (ThreadPoolExecutor-0_0): Loading KWallet
+2021-10-14 17:38:50.817105 (ThreadPoolExecutor-0_0): Loading SecretService
+2021-10-14 17:38:50.818501 (ThreadPoolExecutor-0_0): Loading Windows
+2021-10-14 17:38:50.820213 (ThreadPoolExecutor-0_0): Loading chainer
+2021-10-14 17:38:50.821387 (ThreadPoolExecutor-0_0): Loading macOS
+2021-10-14 17:38:56.943183 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 9 in 6.16 seconds
+2021-10-14 17:38:56.948834 (ThreadPoolExecutor-0_0): On list_SB_DATABASE: Close
+2021-10-14 17:38:57.107621 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_SB_DATABASE_SB_SHIPMENTS".
+2021-10-14 17:38:57.120592 (ThreadPoolExecutor-1_0): Using snowflake connection "list_SB_DATABASE_SB_SHIPMENTS".
+2021-10-14 17:38:57.120897 (ThreadPoolExecutor-1_0): On list_SB_DATABASE_SB_SHIPMENTS: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_SB_DATABASE_SB_SHIPMENTS"} */
+
+    show terse objects in SB_DATABASE.SB_SHIPMENTS
+2021-10-14 17:38:57.121212 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-10-14 17:39:02.635432 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 7 in 5.51 seconds
+2021-10-14 17:39:02.641243 (ThreadPoolExecutor-1_0): On list_SB_DATABASE_SB_SHIPMENTS: Close
+2021-10-14 17:39:02.776713 (MainThread): 19:39:02 | Concurrency: 5 threads (target='dev')
+2021-10-14 17:39:02.777154 (MainThread): 19:39:02 | 
+2021-10-14 17:39:02.780151 (Thread-1): Began running node model.fivetran_dbt.dbt_shipmentdata
+2021-10-14 17:39:02.780762 (Thread-1): 19:39:02 | 1 of 1 START table model SB_SHIPMENTS.dbt_shipmentdata............... [RUN]
+2021-10-14 17:39:02.781400 (Thread-1): Acquiring new snowflake connection "model.fivetran_dbt.dbt_shipmentdata".
+2021-10-14 17:39:02.781769 (Thread-1): Compiling model.fivetran_dbt.dbt_shipmentdata
+2021-10-14 17:39:02.788246 (Thread-1): Writing injected SQL for node "model.fivetran_dbt.dbt_shipmentdata"
+2021-10-14 17:39:02.789177 (Thread-1): finished collecting timing info
+2021-10-14 17:39:02.839760 (Thread-1): Writing runtime SQL for node "model.fivetran_dbt.dbt_shipmentdata"
+2021-10-14 17:39:02.841566 (Thread-1): Using snowflake connection "model.fivetran_dbt.dbt_shipmentdata".
+2021-10-14 17:39:02.841834 (Thread-1): On model.fivetran_dbt.dbt_shipmentdata: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.fivetran_dbt.dbt_shipmentdata"} */
+
+
+      create or replace transient table SB_DATABASE.SB_SHIPMENTS.dbt_shipmentdata  as
+      (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as(
+    select 0000000000000000FC7A2500 as id
+)
+
+select * from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+      );
+2021-10-14 17:39:02.842099 (Thread-1): Opening a new connection, currently in state closed
+2021-10-14 17:39:08.606826 (Thread-1): Snowflake query id: 019f9b63-3200-a96a-0000-b505004714c2
+2021-10-14 17:39:08.607383 (Thread-1): Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 13 at position 36 unexpected 'as'.
+syntax error line 16 at position 0 unexpected 'select'.
+2021-10-14 17:39:08.607946 (Thread-1): finished collecting timing info
+2021-10-14 17:39:08.608434 (Thread-1): On model.fivetran_dbt.dbt_shipmentdata: Close
+2021-10-14 17:39:08.783226 (Thread-1): Database Error in model dbt_shipmentdata (models/example/dbt_shipmentdata.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 13 at position 36 unexpected 'as'.
+  syntax error line 16 at position 0 unexpected 'select'.
+  compiled SQL at target/run/fivetran_dbt/models/example/dbt_shipmentdata.sql
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 183, in exception_handler
+    yield
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/cursor.py", line 721, in execute
+    Error.errorhandler_wrapper(
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 258, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 188, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 001003 (42000): SQL compilation error:
+syntax error line 13 at position 36 unexpected 'as'.
+syntax error line 16 at position 0 unexpected 'select'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 348, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 291, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 393, in run
+    return self.execute(compiled_node, manifest)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/run.py", line 249, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 65, in macro
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 226, in execute
+    return self.connections.execute(
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 131, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 354, in add_query
+    connection, cursor = super().add_query(
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 87, in add_query
+    return connection, cursor
+  File "/opt/anaconda3/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 200, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error in model dbt_shipmentdata (models/example/dbt_shipmentdata.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 13 at position 36 unexpected 'as'.
+  syntax error line 16 at position 0 unexpected 'select'.
+  compiled SQL at target/run/fivetran_dbt/models/example/dbt_shipmentdata.sql
+2021-10-14 17:39:08.790121 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b46793b8-79dc-4271-886a-e79e3430084f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae96d65340>]}
+2021-10-14 17:39:08.791528 (Thread-1): 19:39:08 | 1 of 1 ERROR creating table model SB_SHIPMENTS.dbt_shipmentdata...... [ERROR in 6.01s]
+2021-10-14 17:39:08.795968 (Thread-1): Finished running node model.fivetran_dbt.dbt_shipmentdata
+2021-10-14 17:39:08.801514 (MainThread): Acquiring new snowflake connection "master".
+2021-10-14 17:39:08.802689 (MainThread): 19:39:08 | 
+2021-10-14 17:39:08.803201 (MainThread): 19:39:08 | Finished running 1 table model in 18.05s.
+2021-10-14 17:39:08.803813 (MainThread): Connection 'master' was properly closed.
+2021-10-14 17:39:08.804189 (MainThread): Connection 'model.fivetran_dbt.dbt_shipmentdata' was properly closed.
+2021-10-14 17:39:08.821919 (MainThread): 
+2021-10-14 17:39:08.822481 (MainThread): Completed with 1 error and 0 warnings:
+2021-10-14 17:39:08.822887 (MainThread): 
+2021-10-14 17:39:08.823395 (MainThread): Database Error in model dbt_shipmentdata (models/example/dbt_shipmentdata.sql)
+2021-10-14 17:39:08.823813 (MainThread):   001003 (42000): SQL compilation error:
+2021-10-14 17:39:08.824267 (MainThread):   syntax error line 13 at position 36 unexpected 'as'.
+2021-10-14 17:39:08.825341 (MainThread):   syntax error line 16 at position 0 unexpected 'select'.
+2021-10-14 17:39:08.826554 (MainThread):   compiled SQL at target/run/fivetran_dbt/models/example/dbt_shipmentdata.sql
+2021-10-14 17:39:08.827696 (MainThread): 
+Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+2021-10-14 17:39:08.829028 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae93608d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae9686ba00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae968c4070>]}
+2021-10-14 17:39:08.829905 (MainThread): Flushing usage events
+2021-10-14 17:40:04.614846 (MainThread): Running with dbt=0.21.0
+2021-10-14 17:40:10.758962 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/Users/jonas.albrecht/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-10-14 17:40:10.803722 (MainThread): Tracking: tracking
+2021-10-14 17:40:10.806602 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc5d9f411f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc5d6e16d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc5d9f4fc10>]}
+2021-10-14 17:40:10.897000 (MainThread): Partial parsing not enabled
+2021-10-14 17:40:10.995277 (MainThread): Parsing macros/catalog.sql
+2021-10-14 17:40:11.027143 (MainThread): Parsing macros/adapters.sql
+2021-10-14 17:40:11.403587 (MainThread): Parsing macros/materializations/merge.sql
+2021-10-14 17:40:11.438780 (MainThread): Parsing macros/materializations/seed.sql
+2021-10-14 17:40:11.470254 (MainThread): Parsing macros/materializations/view.sql
+2021-10-14 17:40:11.476410 (MainThread): Parsing macros/materializations/table.sql
+2021-10-14 17:40:11.493263 (MainThread): Parsing macros/materializations/incremental.sql
+2021-10-14 17:40:11.528775 (MainThread): Parsing macros/core.sql
+2021-10-14 17:40:11.545532 (MainThread): Parsing macros/materializations/test.sql
+2021-10-14 17:40:11.604907 (MainThread): Parsing macros/materializations/helpers.sql
+2021-10-14 17:40:11.718207 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-10-14 17:40:11.740962 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-10-14 17:40:12.017972 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-10-14 17:40:12.377554 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-10-14 17:40:12.716932 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-10-14 17:40:12.777987 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-10-14 17:40:12.937792 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2021-10-14 17:40:13.254120 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-10-14 17:40:13.412270 (MainThread): Parsing macros/materializations/table/table.sql
+2021-10-14 17:40:13.463893 (MainThread): Parsing macros/materializations/view/view.sql
+2021-10-14 17:40:13.508529 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-10-14 17:40:13.525491 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-10-14 17:40:13.534088 (MainThread): Parsing macros/etc/query.sql
+2021-10-14 17:40:13.538791 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-10-14 17:40:13.544342 (MainThread): Parsing macros/etc/datetime.sql
+2021-10-14 17:40:13.708871 (MainThread): Parsing macros/etc/where_subquery.sql
+2021-10-14 17:40:13.728385 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-10-14 17:40:13.862525 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-10-14 17:40:13.871240 (MainThread): Parsing macros/adapters/common.sql
+2021-10-14 17:40:14.942821 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-10-14 17:40:14.961030 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-10-14 17:40:14.973058 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-10-14 17:40:14.980562 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-10-14 17:40:18.459514 (MainThread): Acquiring new snowflake connection "model.fivetran_dbt.dbt_shipmentdata".
+2021-10-14 17:40:19.207539 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-14 17:40:19.217017 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-14 17:40:19.375009 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '793fd961-e130-47db-8644-cda315b4e6ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc5da16ba00>]}
+2021-10-14 17:40:19.504208 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2021-10-14 17:40:19.507156 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '793fd961-e130-47db-8644-cda315b4e6ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc5d9fb76d0>]}
+2021-10-14 17:40:19.508126 (MainThread): Found 1 model, 2 tests, 0 snapshots, 0 analyses, 172 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-10-14 17:40:19.589991 (MainThread): 
+2021-10-14 17:40:19.593077 (MainThread): Acquiring new snowflake connection "master".
+2021-10-14 17:40:19.598414 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_SB_DATABASE".
+2021-10-14 17:40:19.672745 (ThreadPoolExecutor-0_0): Using snowflake connection "list_SB_DATABASE".
+2021-10-14 17:40:19.673362 (ThreadPoolExecutor-0_0): On list_SB_DATABASE: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_SB_DATABASE"} */
+
+    show terse schemas in database SB_DATABASE
+    limit 10000
+2021-10-14 17:40:19.673894 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-10-14 17:40:19.878221 (ThreadPoolExecutor-0_0): Loading KWallet
+2021-10-14 17:40:19.882935 (ThreadPoolExecutor-0_0): Loading SecretService
+2021-10-14 17:40:19.886100 (ThreadPoolExecutor-0_0): Loading Windows
+2021-10-14 17:40:19.890255 (ThreadPoolExecutor-0_0): Loading chainer
+2021-10-14 17:40:19.892391 (ThreadPoolExecutor-0_0): Loading macOS
+2021-10-14 17:40:35.095023 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 9 in 15.42 seconds
+2021-10-14 17:40:35.106193 (ThreadPoolExecutor-0_0): On list_SB_DATABASE: Close
+2021-10-14 17:40:35.278808 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_SB_DATABASE_SB_SHIPMENTS".
+2021-10-14 17:40:35.308076 (ThreadPoolExecutor-1_0): Using snowflake connection "list_SB_DATABASE_SB_SHIPMENTS".
+2021-10-14 17:40:35.308645 (ThreadPoolExecutor-1_0): On list_SB_DATABASE_SB_SHIPMENTS: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_SB_DATABASE_SB_SHIPMENTS"} */
+
+    show terse objects in SB_DATABASE.SB_SHIPMENTS
+2021-10-14 17:40:35.309691 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-10-14 17:40:44.608570 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 7 in 9.30 seconds
+2021-10-14 17:40:44.614670 (ThreadPoolExecutor-1_0): On list_SB_DATABASE_SB_SHIPMENTS: Close
+2021-10-14 17:40:44.749461 (MainThread): 19:40:44 | Concurrency: 5 threads (target='dev')
+2021-10-14 17:40:44.749960 (MainThread): 19:40:44 | 
+2021-10-14 17:40:44.757598 (Thread-1): Began running node model.fivetran_dbt.dbt_shipmentdata
+2021-10-14 17:40:44.758379 (Thread-1): 19:40:44 | 1 of 1 START table model SB_SHIPMENTS.dbt_shipmentdata............... [RUN]
+2021-10-14 17:40:44.759314 (Thread-1): Acquiring new snowflake connection "model.fivetran_dbt.dbt_shipmentdata".
+2021-10-14 17:40:44.759740 (Thread-1): Compiling model.fivetran_dbt.dbt_shipmentdata
+2021-10-14 17:40:44.766763 (Thread-1): Writing injected SQL for node "model.fivetran_dbt.dbt_shipmentdata"
+2021-10-14 17:40:44.767781 (Thread-1): finished collecting timing info
+2021-10-14 17:40:44.836375 (Thread-1): Writing runtime SQL for node "model.fivetran_dbt.dbt_shipmentdata"
+2021-10-14 17:40:44.840920 (Thread-1): Using snowflake connection "model.fivetran_dbt.dbt_shipmentdata".
+2021-10-14 17:40:44.841272 (Thread-1): On model.fivetran_dbt.dbt_shipmentdata: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.fivetran_dbt.dbt_shipmentdata"} */
+
+
+      create or replace transient table SB_DATABASE.SB_SHIPMENTS.dbt_shipmentdata  as
+      (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+     
+    "0000000000000000FC7A2500" as id
+)
+
+select * from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+      );
+2021-10-14 17:40:44.841577 (Thread-1): Opening a new connection, currently in state closed
+2021-10-14 17:41:32.947184 (MainThread): Acquiring new snowflake connection "master".
+2021-10-14 17:41:32.948828 (MainThread): Opening a new connection, currently in state closed
+2021-10-14 17:41:33.977465 (MainThread): Connection 'master' was properly closed.
+2021-10-14 17:41:33.978227 (MainThread): Connection 'model.fivetran_dbt.dbt_shipmentdata' was properly closed.
+2021-10-14 17:41:33.978842 (MainThread): Flushing usage events
+2021-10-14 17:41:34.228172 (MainThread): ctrl-c
+2021-10-14 17:41:34.229213 (MainThread): unclosed <socket.socket fd=17, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.19.248.230', 51378), raddr=('34.199.231.102', 443)>
+2021-10-14 17:41:34.236291 (MainThread): unclosed <socket.socket fd=18, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('172.19.248.230', 51377), raddr=('18.194.20.44', 443)>
+2021-10-14 17:41:46.232012 (MainThread): Running with dbt=0.21.0
+2021-10-14 17:41:53.464056 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/Users/jonas.albrecht/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-10-14 17:41:53.474234 (MainThread): Tracking: tracking
+2021-10-14 17:41:53.477380 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe1fb011100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe1f84fa8b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe1fb00dc40>]}
+2021-10-14 17:41:53.661704 (MainThread): Partial parsing not enabled
+2021-10-14 17:41:53.746687 (MainThread): Parsing macros/catalog.sql
+2021-10-14 17:41:53.766663 (MainThread): Parsing macros/adapters.sql
+2021-10-14 17:41:54.002050 (MainThread): Parsing macros/materializations/merge.sql
+2021-10-14 17:41:54.073760 (MainThread): Parsing macros/materializations/seed.sql
+2021-10-14 17:41:54.139589 (MainThread): Parsing macros/materializations/view.sql
+2021-10-14 17:41:54.204284 (MainThread): Parsing macros/materializations/table.sql
+2021-10-14 17:41:54.279411 (MainThread): Parsing macros/materializations/incremental.sql
+2021-10-14 17:41:54.409688 (MainThread): Parsing macros/core.sql
+2021-10-14 17:41:54.475589 (MainThread): Parsing macros/materializations/test.sql
+2021-10-14 17:41:54.507921 (MainThread): Parsing macros/materializations/helpers.sql
+2021-10-14 17:41:54.559593 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-10-14 17:41:54.570675 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-10-14 17:41:54.784876 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-10-14 17:41:55.212944 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-10-14 17:41:55.388286 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-10-14 17:41:55.394139 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-10-14 17:41:55.445998 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2021-10-14 17:41:55.598762 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-10-14 17:41:55.663202 (MainThread): Parsing macros/materializations/table/table.sql
+2021-10-14 17:41:55.695512 (MainThread): Parsing macros/materializations/view/view.sql
+2021-10-14 17:41:55.725314 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-10-14 17:41:55.739049 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-10-14 17:41:55.744492 (MainThread): Parsing macros/etc/query.sql
+2021-10-14 17:41:55.746907 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-10-14 17:41:55.751029 (MainThread): Parsing macros/etc/datetime.sql
+2021-10-14 17:41:55.773249 (MainThread): Parsing macros/etc/where_subquery.sql
+2021-10-14 17:41:55.777595 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-10-14 17:41:55.790305 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-10-14 17:41:55.794496 (MainThread): Parsing macros/adapters/common.sql
+2021-10-14 17:41:56.160884 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-10-14 17:41:56.166188 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-10-14 17:41:56.174162 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-10-14 17:41:56.178739 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-10-14 17:41:57.489186 (MainThread): Acquiring new snowflake connection "model.fivetran_dbt.dbt_shipmentdata".
+2021-10-14 17:41:57.781265 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-14 17:41:57.785741 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-14 17:41:57.852747 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e4e2d396-2835-46d9-85aa-cc76e7c25717', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe1fb073100>]}
+2021-10-14 17:41:57.878255 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2021-10-14 17:41:57.879854 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e4e2d396-2835-46d9-85aa-cc76e7c25717', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe1fb0c6070>]}
+2021-10-14 17:41:57.881333 (MainThread): Found 1 model, 2 tests, 0 snapshots, 0 analyses, 172 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-10-14 17:41:57.887995 (MainThread): 
+2021-10-14 17:41:57.889623 (MainThread): Acquiring new snowflake connection "master".
+2021-10-14 17:41:57.899502 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_SB_DATABASE".
+2021-10-14 17:41:57.972892 (ThreadPoolExecutor-0_0): Using snowflake connection "list_SB_DATABASE".
+2021-10-14 17:41:57.973513 (ThreadPoolExecutor-0_0): On list_SB_DATABASE: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_SB_DATABASE"} */
+
+    show terse schemas in database SB_DATABASE
+    limit 10000
+2021-10-14 17:41:57.973862 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-10-14 17:41:58.079565 (ThreadPoolExecutor-0_0): Loading KWallet
+2021-10-14 17:41:58.086135 (ThreadPoolExecutor-0_0): Loading SecretService
+2021-10-14 17:41:58.091339 (ThreadPoolExecutor-0_0): Loading Windows
+2021-10-14 17:41:58.093818 (ThreadPoolExecutor-0_0): Loading chainer
+2021-10-14 17:41:58.095191 (ThreadPoolExecutor-0_0): Loading macOS
+2021-10-14 17:42:06.135610 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 9 in 8.16 seconds
+2021-10-14 17:42:06.141677 (ThreadPoolExecutor-0_0): On list_SB_DATABASE: Close
+2021-10-14 17:42:06.347370 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_SB_DATABASE_SB_SHIPMENTS".
+2021-10-14 17:42:06.362301 (ThreadPoolExecutor-1_0): Using snowflake connection "list_SB_DATABASE_SB_SHIPMENTS".
+2021-10-14 17:42:06.362643 (ThreadPoolExecutor-1_0): On list_SB_DATABASE_SB_SHIPMENTS: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_SB_DATABASE_SB_SHIPMENTS"} */
+
+    show terse objects in SB_DATABASE.SB_SHIPMENTS
+2021-10-14 17:42:06.362919 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-10-14 17:42:12.586178 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 7 in 6.22 seconds
+2021-10-14 17:42:12.591726 (ThreadPoolExecutor-1_0): On list_SB_DATABASE_SB_SHIPMENTS: Close
+2021-10-14 17:42:12.715233 (MainThread): 19:42:12 | Concurrency: 5 threads (target='dev')
+2021-10-14 17:42:12.715682 (MainThread): 19:42:12 | 
+2021-10-14 17:42:12.718758 (Thread-1): Began running node model.fivetran_dbt.dbt_shipmentdata
+2021-10-14 17:42:12.719364 (Thread-1): 19:42:12 | 1 of 1 START table model SB_SHIPMENTS.dbt_shipmentdata............... [RUN]
+2021-10-14 17:42:12.720000 (Thread-1): Acquiring new snowflake connection "model.fivetran_dbt.dbt_shipmentdata".
+2021-10-14 17:42:12.720398 (Thread-1): Compiling model.fivetran_dbt.dbt_shipmentdata
+2021-10-14 17:42:12.726461 (Thread-1): Writing injected SQL for node "model.fivetran_dbt.dbt_shipmentdata"
+2021-10-14 17:42:12.727392 (Thread-1): finished collecting timing info
+2021-10-14 17:42:12.779227 (Thread-1): Writing runtime SQL for node "model.fivetran_dbt.dbt_shipmentdata"
+2021-10-14 17:42:12.781418 (Thread-1): Using snowflake connection "model.fivetran_dbt.dbt_shipmentdata".
+2021-10-14 17:42:12.781787 (Thread-1): On model.fivetran_dbt.dbt_shipmentdata: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.fivetran_dbt.dbt_shipmentdata"} */
+
+
+      create or replace transient table SB_DATABASE.SB_SHIPMENTS.dbt_shipmentdata  as
+      (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+     
+    "0000000000000000FC7A2500" as id
+)
+
+select * from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+      );
+2021-10-14 17:42:12.782061 (Thread-1): Opening a new connection, currently in state closed
+2021-10-14 17:42:19.561777 (Thread-1): Snowflake query id: 019f9b66-3200-a96c-0000-b505004723ae
+2021-10-14 17:42:19.562644 (Thread-1): Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 14 at position 31 unexpected 'as'.
+syntax error line 17 at position 0 unexpected 'select'.
+2021-10-14 17:42:19.563266 (Thread-1): finished collecting timing info
+2021-10-14 17:42:19.563732 (Thread-1): On model.fivetran_dbt.dbt_shipmentdata: Close
+2021-10-14 17:42:19.701135 (Thread-1): Database Error in model dbt_shipmentdata (models/example/dbt_shipmentdata.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 14 at position 31 unexpected 'as'.
+  syntax error line 17 at position 0 unexpected 'select'.
+  compiled SQL at target/run/fivetran_dbt/models/example/dbt_shipmentdata.sql
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 183, in exception_handler
+    yield
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/cursor.py", line 721, in execute
+    Error.errorhandler_wrapper(
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 258, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 188, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 001003 (42000): SQL compilation error:
+syntax error line 14 at position 31 unexpected 'as'.
+syntax error line 17 at position 0 unexpected 'select'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 348, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 291, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 393, in run
+    return self.execute(compiled_node, manifest)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/run.py", line 249, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 65, in macro
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 226, in execute
+    return self.connections.execute(
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 131, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 354, in add_query
+    connection, cursor = super().add_query(
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 87, in add_query
+    return connection, cursor
+  File "/opt/anaconda3/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 200, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error in model dbt_shipmentdata (models/example/dbt_shipmentdata.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 14 at position 31 unexpected 'as'.
+  syntax error line 17 at position 0 unexpected 'select'.
+  compiled SQL at target/run/fivetran_dbt/models/example/dbt_shipmentdata.sql
+2021-10-14 17:42:19.706996 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e4e2d396-2835-46d9-85aa-cc76e7c25717', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe1fb3b6af0>]}
+2021-10-14 17:42:19.708012 (Thread-1): 19:42:19 | 1 of 1 ERROR creating table model SB_SHIPMENTS.dbt_shipmentdata...... [ERROR in 6.99s]
+2021-10-14 17:42:19.708355 (Thread-1): Finished running node model.fivetran_dbt.dbt_shipmentdata
+2021-10-14 17:42:19.711610 (MainThread): Acquiring new snowflake connection "master".
+2021-10-14 17:42:19.712208 (MainThread): 19:42:19 | 
+2021-10-14 17:42:19.712490 (MainThread): 19:42:19 | Finished running 1 table model in 21.82s.
+2021-10-14 17:42:19.712851 (MainThread): Connection 'master' was properly closed.
+2021-10-14 17:42:19.713200 (MainThread): Connection 'model.fivetran_dbt.dbt_shipmentdata' was properly closed.
+2021-10-14 17:42:19.722615 (MainThread): 
+2021-10-14 17:42:19.722938 (MainThread): Completed with 1 error and 0 warnings:
+2021-10-14 17:42:19.723302 (MainThread): 
+2021-10-14 17:42:19.723709 (MainThread): Database Error in model dbt_shipmentdata (models/example/dbt_shipmentdata.sql)
+2021-10-14 17:42:19.724054 (MainThread):   001003 (42000): SQL compilation error:
+2021-10-14 17:42:19.724437 (MainThread):   syntax error line 14 at position 31 unexpected 'as'.
+2021-10-14 17:42:19.724759 (MainThread):   syntax error line 17 at position 0 unexpected 'select'.
+2021-10-14 17:42:19.725018 (MainThread):   compiled SQL at target/run/fivetran_dbt/models/example/dbt_shipmentdata.sql
+2021-10-14 17:42:19.725284 (MainThread): 
+Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+2021-10-14 17:42:19.725792 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe1f84fa8b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe1fb129100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe1fb1907c0>]}
+2021-10-14 17:42:19.726183 (MainThread): Flushing usage events
+2021-10-14 17:44:13.608087 (MainThread): Running with dbt=0.21.0
+2021-10-14 17:44:17.961549 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/Users/jonas.albrecht/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-10-14 17:44:17.967158 (MainThread): Tracking: tracking
+2021-10-14 17:44:17.968553 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7de7408e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7dbcf2dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7de752b20>]}
+2021-10-14 17:44:18.006930 (MainThread): Partial parsing not enabled
+2021-10-14 17:44:18.053583 (MainThread): Parsing macros/catalog.sql
+2021-10-14 17:44:18.059186 (MainThread): Parsing macros/adapters.sql
+2021-10-14 17:44:18.163096 (MainThread): Parsing macros/materializations/merge.sql
+2021-10-14 17:44:18.171590 (MainThread): Parsing macros/materializations/seed.sql
+2021-10-14 17:44:18.186687 (MainThread): Parsing macros/materializations/view.sql
+2021-10-14 17:44:18.189924 (MainThread): Parsing macros/materializations/table.sql
+2021-10-14 17:44:18.196873 (MainThread): Parsing macros/materializations/incremental.sql
+2021-10-14 17:44:18.215951 (MainThread): Parsing macros/core.sql
+2021-10-14 17:44:18.224189 (MainThread): Parsing macros/materializations/test.sql
+2021-10-14 17:44:18.239947 (MainThread): Parsing macros/materializations/helpers.sql
+2021-10-14 17:44:18.266268 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-10-14 17:44:18.270715 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-10-14 17:44:18.312650 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-10-14 17:44:18.388589 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-10-14 17:44:18.451793 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-10-14 17:44:18.455591 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-10-14 17:44:18.487887 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2021-10-14 17:44:18.535056 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-10-14 17:44:18.571442 (MainThread): Parsing macros/materializations/table/table.sql
+2021-10-14 17:44:18.594275 (MainThread): Parsing macros/materializations/view/view.sql
+2021-10-14 17:44:18.611638 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-10-14 17:44:18.620373 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-10-14 17:44:18.624367 (MainThread): Parsing macros/etc/query.sql
+2021-10-14 17:44:18.627315 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-10-14 17:44:18.631948 (MainThread): Parsing macros/etc/datetime.sql
+2021-10-14 17:44:18.651119 (MainThread): Parsing macros/etc/where_subquery.sql
+2021-10-14 17:44:18.655053 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-10-14 17:44:18.660148 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-10-14 17:44:18.663788 (MainThread): Parsing macros/adapters/common.sql
+2021-10-14 17:44:18.817212 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-10-14 17:44:18.821148 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-10-14 17:44:18.824906 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-10-14 17:44:18.829925 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-10-14 17:44:19.272812 (MainThread): Acquiring new snowflake connection "model.fivetran_dbt.dbt_shipmentdata".
+2021-10-14 17:44:19.352595 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-14 17:44:19.356449 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-14 17:44:19.384381 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6ca57b7f-66a6-431d-a46b-c4f09273c8fc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7df067a60>]}
+2021-10-14 17:44:19.394297 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2021-10-14 17:44:19.395779 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6ca57b7f-66a6-431d-a46b-c4f09273c8fc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7de7c8940>]}
+2021-10-14 17:44:19.396696 (MainThread): Found 1 model, 2 tests, 0 snapshots, 0 analyses, 172 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-10-14 17:44:19.399702 (MainThread): 
+2021-10-14 17:44:19.400372 (MainThread): Acquiring new snowflake connection "master".
+2021-10-14 17:44:19.401907 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_SB_DATABASE".
+2021-10-14 17:44:19.426594 (ThreadPoolExecutor-0_0): Using snowflake connection "list_SB_DATABASE".
+2021-10-14 17:44:19.426925 (ThreadPoolExecutor-0_0): On list_SB_DATABASE: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_SB_DATABASE"} */
+
+    show terse schemas in database SB_DATABASE
+    limit 10000
+2021-10-14 17:44:19.427188 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-10-14 17:44:19.468872 (ThreadPoolExecutor-0_0): Loading KWallet
+2021-10-14 17:44:19.470888 (ThreadPoolExecutor-0_0): Loading SecretService
+2021-10-14 17:44:19.472767 (ThreadPoolExecutor-0_0): Loading Windows
+2021-10-14 17:44:19.474988 (ThreadPoolExecutor-0_0): Loading chainer
+2021-10-14 17:44:19.476329 (ThreadPoolExecutor-0_0): Loading macOS
+2021-10-14 17:44:30.103460 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 9 in 10.68 seconds
+2021-10-14 17:44:30.107861 (ThreadPoolExecutor-0_0): On list_SB_DATABASE: Close
+2021-10-14 17:44:30.274654 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_SB_DATABASE_SB_SHIPMENTS".
+2021-10-14 17:44:30.288768 (ThreadPoolExecutor-1_0): Using snowflake connection "list_SB_DATABASE_SB_SHIPMENTS".
+2021-10-14 17:44:30.289032 (ThreadPoolExecutor-1_0): On list_SB_DATABASE_SB_SHIPMENTS: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_SB_DATABASE_SB_SHIPMENTS"} */
+
+    show terse objects in SB_DATABASE.SB_SHIPMENTS
+2021-10-14 17:44:30.289232 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-10-14 17:44:35.534423 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 7 in 5.25 seconds
+2021-10-14 17:44:35.539693 (ThreadPoolExecutor-1_0): On list_SB_DATABASE_SB_SHIPMENTS: Close
+2021-10-14 17:44:35.700410 (MainThread): 19:44:35 | Concurrency: 5 threads (target='dev')
+2021-10-14 17:44:35.700770 (MainThread): 19:44:35 | 
+2021-10-14 17:44:35.703163 (Thread-1): Began running node model.fivetran_dbt.dbt_shipmentdata
+2021-10-14 17:44:35.703687 (Thread-1): 19:44:35 | 1 of 1 START table model SB_SHIPMENTS.dbt_shipmentdata............... [RUN]
+2021-10-14 17:44:35.704288 (Thread-1): Acquiring new snowflake connection "model.fivetran_dbt.dbt_shipmentdata".
+2021-10-14 17:44:35.704603 (Thread-1): Compiling model.fivetran_dbt.dbt_shipmentdata
+2021-10-14 17:44:35.709605 (Thread-1): Writing injected SQL for node "model.fivetran_dbt.dbt_shipmentdata"
+2021-10-14 17:44:35.710296 (Thread-1): finished collecting timing info
+2021-10-14 17:44:35.752849 (Thread-1): Writing runtime SQL for node "model.fivetran_dbt.dbt_shipmentdata"
+2021-10-14 17:44:35.754882 (Thread-1): Using snowflake connection "model.fivetran_dbt.dbt_shipmentdata".
+2021-10-14 17:44:35.755164 (Thread-1): On model.fivetran_dbt.dbt_shipmentdata: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.fivetran_dbt.dbt_shipmentdata"} */
+
+
+      create or replace transient table SB_DATABASE.SB_SHIPMENTS.dbt_shipmentdata  as
+      (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+     
+    select "0000000000000000FC7A2500" as id
+    union all
+    select null as id
+)
+
+select * from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+      );
+2021-10-14 17:44:35.755662 (Thread-1): Opening a new connection, currently in state closed
+2021-10-14 17:44:40.898286 (Thread-1): Snowflake query id: 019f9b68-3200-a96a-0000-b50500471552
+2021-10-14 17:44:40.898771 (Thread-1): Snowflake error: 000904 (42000): SQL compilation error: error line 14 at position 11
+invalid identifier '"0000000000000000FC7A2500"'
+2021-10-14 17:44:40.899274 (Thread-1): finished collecting timing info
+2021-10-14 17:44:40.899678 (Thread-1): On model.fivetran_dbt.dbt_shipmentdata: Close
+2021-10-14 17:44:41.083288 (Thread-1): Database Error in model dbt_shipmentdata (models/example/dbt_shipmentdata.sql)
+  000904 (42000): SQL compilation error: error line 14 at position 11
+  invalid identifier '"0000000000000000FC7A2500"'
+  compiled SQL at target/run/fivetran_dbt/models/example/dbt_shipmentdata.sql
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 183, in exception_handler
+    yield
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/cursor.py", line 721, in execute
+    Error.errorhandler_wrapper(
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 258, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 188, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 000904 (42000): SQL compilation error: error line 14 at position 11
+invalid identifier '"0000000000000000FC7A2500"'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 348, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 291, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 393, in run
+    return self.execute(compiled_node, manifest)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/run.py", line 249, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 65, in macro
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 226, in execute
+    return self.connections.execute(
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 131, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 354, in add_query
+    connection, cursor = super().add_query(
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 87, in add_query
+    return connection, cursor
+  File "/opt/anaconda3/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 200, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error in model dbt_shipmentdata (models/example/dbt_shipmentdata.sql)
+  000904 (42000): SQL compilation error: error line 14 at position 11
+  invalid identifier '"0000000000000000FC7A2500"'
+  compiled SQL at target/run/fivetran_dbt/models/example/dbt_shipmentdata.sql
+2021-10-14 17:44:41.086025 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6ca57b7f-66a6-431d-a46b-c4f09273c8fc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7df4c9880>]}
+2021-10-14 17:44:41.086832 (Thread-1): 19:44:41 | 1 of 1 ERROR creating table model SB_SHIPMENTS.dbt_shipmentdata...... [ERROR in 5.38s]
+2021-10-14 17:44:41.087175 (Thread-1): Finished running node model.fivetran_dbt.dbt_shipmentdata
+2021-10-14 17:44:41.090228 (MainThread): Acquiring new snowflake connection "master".
+2021-10-14 17:44:41.090734 (MainThread): 19:44:41 | 
+2021-10-14 17:44:41.090990 (MainThread): 19:44:41 | Finished running 1 table model in 21.69s.
+2021-10-14 17:44:41.091292 (MainThread): Connection 'master' was properly closed.
+2021-10-14 17:44:41.091566 (MainThread): Connection 'model.fivetran_dbt.dbt_shipmentdata' was properly closed.
+2021-10-14 17:44:41.100086 (MainThread): 
+2021-10-14 17:44:41.100365 (MainThread): Completed with 1 error and 0 warnings:
+2021-10-14 17:44:41.100611 (MainThread): 
+2021-10-14 17:44:41.100844 (MainThread): Database Error in model dbt_shipmentdata (models/example/dbt_shipmentdata.sql)
+2021-10-14 17:44:41.101054 (MainThread):   000904 (42000): SQL compilation error: error line 14 at position 11
+2021-10-14 17:44:41.101258 (MainThread):   invalid identifier '"0000000000000000FC7A2500"'
+2021-10-14 17:44:41.101455 (MainThread):   compiled SQL at target/run/fivetran_dbt/models/example/dbt_shipmentdata.sql
+2021-10-14 17:44:41.101668 (MainThread): 
+Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+2021-10-14 17:44:41.102048 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7dbcf2dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7df067e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7df4d5940>]}
+2021-10-14 17:44:41.102359 (MainThread): Flushing usage events
+2021-10-14 17:45:32.237156 (MainThread): Running with dbt=0.21.0
+2021-10-14 17:45:34.500217 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/Users/jonas.albrecht/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-10-14 17:45:34.504659 (MainThread): Tracking: tracking
+2021-10-14 17:45:34.505903 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff531f7a310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff52ee088b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff531f4dd30>]}
+2021-10-14 17:45:34.541259 (MainThread): Partial parsing not enabled
+2021-10-14 17:45:34.588766 (MainThread): Parsing macros/catalog.sql
+2021-10-14 17:45:34.596512 (MainThread): Parsing macros/adapters.sql
+2021-10-14 17:45:34.659151 (MainThread): Parsing macros/materializations/merge.sql
+2021-10-14 17:45:34.668284 (MainThread): Parsing macros/materializations/seed.sql
+2021-10-14 17:45:34.675918 (MainThread): Parsing macros/materializations/view.sql
+2021-10-14 17:45:34.679309 (MainThread): Parsing macros/materializations/table.sql
+2021-10-14 17:45:34.684521 (MainThread): Parsing macros/materializations/incremental.sql
+2021-10-14 17:45:34.699253 (MainThread): Parsing macros/core.sql
+2021-10-14 17:45:34.705635 (MainThread): Parsing macros/materializations/test.sql
+2021-10-14 17:45:34.717128 (MainThread): Parsing macros/materializations/helpers.sql
+2021-10-14 17:45:34.735283 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-10-14 17:45:34.738034 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-10-14 17:45:34.766884 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-10-14 17:45:34.819284 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-10-14 17:45:34.857883 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-10-14 17:45:34.861755 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-10-14 17:45:34.886026 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2021-10-14 17:45:34.926084 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-10-14 17:45:34.953918 (MainThread): Parsing macros/materializations/table/table.sql
+2021-10-14 17:45:34.969106 (MainThread): Parsing macros/materializations/view/view.sql
+2021-10-14 17:45:34.985811 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-10-14 17:45:34.991036 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-10-14 17:45:34.993026 (MainThread): Parsing macros/etc/query.sql
+2021-10-14 17:45:34.994447 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-10-14 17:45:34.996572 (MainThread): Parsing macros/etc/datetime.sql
+2021-10-14 17:45:35.007454 (MainThread): Parsing macros/etc/where_subquery.sql
+2021-10-14 17:45:35.009656 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-10-14 17:45:35.013110 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-10-14 17:45:35.015233 (MainThread): Parsing macros/adapters/common.sql
+2021-10-14 17:45:35.090002 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-10-14 17:45:35.092082 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-10-14 17:45:35.093616 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-10-14 17:45:35.095414 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-10-14 17:45:36.156577 (MainThread): Acquiring new snowflake connection "model.fivetran_dbt.dbt_shipmentdata".
+2021-10-14 17:45:36.229325 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-14 17:45:36.234816 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-14 17:45:36.264360 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'dfde43e6-e774-452e-ac38-f3bf01ceeaff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff531fb2100>]}
+2021-10-14 17:45:36.274362 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2021-10-14 17:45:36.275038 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'dfde43e6-e774-452e-ac38-f3bf01ceeaff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff532006070>]}
+2021-10-14 17:45:36.275509 (MainThread): Found 1 model, 2 tests, 0 snapshots, 0 analyses, 172 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-10-14 17:45:36.277579 (MainThread): 
+2021-10-14 17:45:36.279016 (MainThread): Acquiring new snowflake connection "master".
+2021-10-14 17:45:36.281239 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_SB_DATABASE".
+2021-10-14 17:45:36.306722 (ThreadPoolExecutor-0_0): Using snowflake connection "list_SB_DATABASE".
+2021-10-14 17:45:36.306994 (ThreadPoolExecutor-0_0): On list_SB_DATABASE: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_SB_DATABASE"} */
+
+    show terse schemas in database SB_DATABASE
+    limit 10000
+2021-10-14 17:45:36.307259 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-10-14 17:45:36.353640 (ThreadPoolExecutor-0_0): Loading KWallet
+2021-10-14 17:45:36.355814 (ThreadPoolExecutor-0_0): Loading SecretService
+2021-10-14 17:45:36.357332 (ThreadPoolExecutor-0_0): Loading Windows
+2021-10-14 17:45:36.358952 (ThreadPoolExecutor-0_0): Loading chainer
+2021-10-14 17:45:36.360063 (ThreadPoolExecutor-0_0): Loading macOS
+2021-10-14 17:45:43.382234 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 9 in 7.07 seconds
+2021-10-14 17:45:43.390282 (ThreadPoolExecutor-0_0): On list_SB_DATABASE: Close
+2021-10-14 17:45:43.541620 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_SB_DATABASE_SB_SHIPMENTS".
+2021-10-14 17:45:43.556846 (ThreadPoolExecutor-1_0): Using snowflake connection "list_SB_DATABASE_SB_SHIPMENTS".
+2021-10-14 17:45:43.557152 (ThreadPoolExecutor-1_0): On list_SB_DATABASE_SB_SHIPMENTS: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_SB_DATABASE_SB_SHIPMENTS"} */
+
+    show terse objects in SB_DATABASE.SB_SHIPMENTS
+2021-10-14 17:45:43.557495 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-10-14 17:45:49.886807 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 7 in 6.33 seconds
+2021-10-14 17:45:49.891853 (ThreadPoolExecutor-1_0): On list_SB_DATABASE_SB_SHIPMENTS: Close
+2021-10-14 17:45:50.031584 (MainThread): 19:45:50 | Concurrency: 5 threads (target='dev')
+2021-10-14 17:45:50.032107 (MainThread): 19:45:50 | 
+2021-10-14 17:45:50.035359 (Thread-1): Began running node model.fivetran_dbt.dbt_shipmentdata
+2021-10-14 17:45:50.035920 (Thread-1): 19:45:50 | 1 of 1 START table model SB_SHIPMENTS.dbt_shipmentdata............... [RUN]
+2021-10-14 17:45:50.036585 (Thread-1): Acquiring new snowflake connection "model.fivetran_dbt.dbt_shipmentdata".
+2021-10-14 17:45:50.036906 (Thread-1): Compiling model.fivetran_dbt.dbt_shipmentdata
+2021-10-14 17:45:50.043706 (Thread-1): Writing injected SQL for node "model.fivetran_dbt.dbt_shipmentdata"
+2021-10-14 17:45:50.044474 (Thread-1): finished collecting timing info
+2021-10-14 17:45:50.094720 (Thread-1): Writing runtime SQL for node "model.fivetran_dbt.dbt_shipmentdata"
+2021-10-14 17:45:50.096782 (Thread-1): Using snowflake connection "model.fivetran_dbt.dbt_shipmentdata".
+2021-10-14 17:45:50.097031 (Thread-1): On model.fivetran_dbt.dbt_shipmentdata: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.fivetran_dbt.dbt_shipmentdata"} */
+
+
+      create or replace transient table SB_DATABASE.SB_SHIPMENTS.dbt_shipmentdata  as
+      (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+     
+    select '0000000000000000FC7A2500' as id
+    union all
+    select null as id
+)
+
+select * from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+      );
+2021-10-14 17:45:50.097260 (Thread-1): Opening a new connection, currently in state closed
+2021-10-14 17:45:56.724033 (Thread-1): SQL status: SUCCESS 1 in 6.63 seconds
+2021-10-14 17:45:56.742841 (Thread-1): finished collecting timing info
+2021-10-14 17:45:56.743252 (Thread-1): On model.fivetran_dbt.dbt_shipmentdata: Close
+2021-10-14 17:45:56.882703 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dfde43e6-e774-452e-ac38-f3bf01ceeaff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff5323f3af0>]}
+2021-10-14 17:45:56.883509 (Thread-1): 19:45:56 | 1 of 1 OK created table model SB_SHIPMENTS.dbt_shipmentdata.......... [SUCCESS 1 in 6.85s]
+2021-10-14 17:45:56.883826 (Thread-1): Finished running node model.fivetran_dbt.dbt_shipmentdata
+2021-10-14 17:45:56.886158 (MainThread): Acquiring new snowflake connection "master".
+2021-10-14 17:45:56.886641 (MainThread): 19:45:56 | 
+2021-10-14 17:45:56.886874 (MainThread): 19:45:56 | Finished running 1 table model in 20.61s.
+2021-10-14 17:45:56.887149 (MainThread): Connection 'master' was properly closed.
+2021-10-14 17:45:56.887346 (MainThread): Connection 'model.fivetran_dbt.dbt_shipmentdata' was properly closed.
+2021-10-14 17:45:56.894897 (MainThread): 
+2021-10-14 17:45:56.895211 (MainThread): Completed successfully
+2021-10-14 17:45:56.895586 (MainThread): 
+Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+2021-10-14 17:45:56.896141 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff52ee088b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff532069100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff532407310>]}
+2021-10-14 17:45:56.896484 (MainThread): Flushing usage events
+2021-10-14 17:50:05.454922 (MainThread): Running with dbt=0.21.0
+2021-10-14 17:50:07.792900 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/Users/jonas.albrecht/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-10-14 17:50:07.795419 (MainThread): Tracking: tracking
+2021-10-14 17:50:07.797089 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb55707e160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb553e10880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb55704ec10>]}
+2021-10-14 17:50:07.812836 (MainThread): Partial parsing not enabled
+2021-10-14 17:50:07.837703 (MainThread): Parsing macros/catalog.sql
+2021-10-14 17:50:07.840254 (MainThread): Parsing macros/adapters.sql
+2021-10-14 17:50:07.881630 (MainThread): Parsing macros/materializations/merge.sql
+2021-10-14 17:50:07.885648 (MainThread): Parsing macros/materializations/seed.sql
+2021-10-14 17:50:07.890302 (MainThread): Parsing macros/materializations/view.sql
+2021-10-14 17:50:07.891643 (MainThread): Parsing macros/materializations/table.sql
+2021-10-14 17:50:07.895275 (MainThread): Parsing macros/materializations/incremental.sql
+2021-10-14 17:50:07.904555 (MainThread): Parsing macros/core.sql
+2021-10-14 17:50:07.909323 (MainThread): Parsing macros/materializations/test.sql
+2021-10-14 17:50:07.916646 (MainThread): Parsing macros/materializations/helpers.sql
+2021-10-14 17:50:07.927351 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-10-14 17:50:07.929032 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-10-14 17:50:07.946316 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-10-14 17:50:07.981091 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-10-14 17:50:08.005573 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-10-14 17:50:08.007570 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-10-14 17:50:08.018207 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2021-10-14 17:50:08.038708 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-10-14 17:50:08.053052 (MainThread): Parsing macros/materializations/table/table.sql
+2021-10-14 17:50:08.061026 (MainThread): Parsing macros/materializations/view/view.sql
+2021-10-14 17:50:08.068600 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-10-14 17:50:08.072478 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-10-14 17:50:08.073980 (MainThread): Parsing macros/etc/query.sql
+2021-10-14 17:50:08.074920 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-10-14 17:50:08.076480 (MainThread): Parsing macros/etc/datetime.sql
+2021-10-14 17:50:08.085152 (MainThread): Parsing macros/etc/where_subquery.sql
+2021-10-14 17:50:08.086956 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-10-14 17:50:08.089339 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-10-14 17:50:08.090880 (MainThread): Parsing macros/adapters/common.sql
+2021-10-14 17:50:08.150213 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-10-14 17:50:08.151924 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-10-14 17:50:08.153107 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-10-14 17:50:08.154431 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-10-14 17:50:08.354363 (MainThread): Acquiring new snowflake connection "model.fivetran_dbt.dbt_shipmentdata".
+2021-10-14 17:50:08.391438 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-14 17:50:08.393241 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-14 17:50:08.410282 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '44b893c6-6589-4c2a-b665-8944c0b67808', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb55716a3d0>]}
+2021-10-14 17:50:08.416279 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2021-10-14 17:50:08.416901 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '44b893c6-6589-4c2a-b665-8944c0b67808', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb557106040>]}
+2021-10-14 17:50:08.417163 (MainThread): Found 1 model, 2 tests, 0 snapshots, 0 analyses, 172 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-10-14 17:50:08.418517 (MainThread): 
+2021-10-14 17:50:08.418853 (MainThread): Acquiring new snowflake connection "master".
+2021-10-14 17:50:08.419638 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_SB_DATABASE".
+2021-10-14 17:50:08.431578 (ThreadPoolExecutor-0_0): Using snowflake connection "list_SB_DATABASE".
+2021-10-14 17:50:08.431769 (ThreadPoolExecutor-0_0): On list_SB_DATABASE: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_SB_DATABASE"} */
+
+    show terse schemas in database SB_DATABASE
+    limit 10000
+2021-10-14 17:50:08.431903 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-10-14 17:50:08.472232 (ThreadPoolExecutor-0_0): Loading KWallet
+2021-10-14 17:50:08.473664 (ThreadPoolExecutor-0_0): Loading SecretService
+2021-10-14 17:50:08.474712 (ThreadPoolExecutor-0_0): Loading Windows
+2021-10-14 17:50:08.476072 (ThreadPoolExecutor-0_0): Loading chainer
+2021-10-14 17:50:08.476880 (ThreadPoolExecutor-0_0): Loading macOS
+2021-10-14 17:50:18.454307 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 9 in 10.02 seconds
+2021-10-14 17:50:18.458411 (ThreadPoolExecutor-0_0): On list_SB_DATABASE: Close
+2021-10-14 17:50:18.597028 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_SB_DATABASE_SB_SHIPMENTS".
+2021-10-14 17:50:18.605944 (ThreadPoolExecutor-1_0): Using snowflake connection "list_SB_DATABASE_SB_SHIPMENTS".
+2021-10-14 17:50:18.606153 (ThreadPoolExecutor-1_0): On list_SB_DATABASE_SB_SHIPMENTS: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_SB_DATABASE_SB_SHIPMENTS"} */
+
+    show terse objects in SB_DATABASE.SB_SHIPMENTS
+2021-10-14 17:50:18.606315 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-10-14 17:50:23.385763 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 7 in 4.78 seconds
+2021-10-14 17:50:23.390351 (ThreadPoolExecutor-1_0): On list_SB_DATABASE_SB_SHIPMENTS: Close
+2021-10-14 17:50:23.529858 (MainThread): 19:50:23 | Concurrency: 5 threads (target='dev')
+2021-10-14 17:50:23.530176 (MainThread): 19:50:23 | 
+2021-10-14 17:50:23.532274 (Thread-1): Began running node model.fivetran_dbt.dbt_shipmentdata
+2021-10-14 17:50:23.532714 (Thread-1): 19:50:23 | 1 of 1 START table model SB_SHIPMENTS.dbt_shipmentdata............... [RUN]
+2021-10-14 17:50:23.533164 (Thread-1): Acquiring new snowflake connection "model.fivetran_dbt.dbt_shipmentdata".
+2021-10-14 17:50:23.533434 (Thread-1): Compiling model.fivetran_dbt.dbt_shipmentdata
+2021-10-14 17:50:23.537578 (Thread-1): Writing injected SQL for node "model.fivetran_dbt.dbt_shipmentdata"
+2021-10-14 17:50:23.538584 (Thread-1): finished collecting timing info
+2021-10-14 17:50:23.572876 (Thread-1): Writing runtime SQL for node "model.fivetran_dbt.dbt_shipmentdata"
+2021-10-14 17:50:23.574757 (Thread-1): Using snowflake connection "model.fivetran_dbt.dbt_shipmentdata".
+2021-10-14 17:50:23.574980 (Thread-1): On model.fivetran_dbt.dbt_shipmentdata: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.fivetran_dbt.dbt_shipmentdata"} */
+
+
+      create or replace transient table SB_DATABASE.SB_SHIPMENTS.dbt_shipmentdata  as
+      (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+     
+    select '0000000000000000FC7A2500' as id
+    union all
+    select null as id
+)
+
+create proc Binary_to_DateTime ( 
+    @mydate_bin binary
+)
+as begin 
+SELECT CAST(@mydate_bin AS   DATETIME)
+end 
+select * from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+      );
+2021-10-14 17:50:23.575168 (Thread-1): Opening a new connection, currently in state closed
+2021-10-14 17:50:31.235607 (MainThread): Acquiring new snowflake connection "master".
+2021-10-14 17:50:31.236264 (MainThread): Opening a new connection, currently in state closed
+2021-10-14 17:50:37.189362 (MainThread): Cancelling query 'model.fivetran_dbt.dbt_shipmentdata' (199033083428602)
+2021-10-14 17:50:37.192571 (MainThread): Using snowflake connection "master".
+2021-10-14 17:50:37.192832 (MainThread): On master: select system$abort_session(199033083428602)
+2021-10-14 17:50:37.193099 (MainThread): Opening a new connection, currently in state init
+2021-10-14 17:50:43.649096 (MainThread): SQL status: SUCCESS 1 in 6.46 seconds
+2021-10-14 17:50:43.650868 (MainThread): Cancel query 'model.fivetran_dbt.dbt_shipmentdata': ('session [199033083428602] terminated.',)
+2021-10-14 17:50:43.651256 (MainThread): 19:50:43 | CANCEL query model.fivetran_dbt.dbt_shipmentdata..................... [CANCEL]
+2021-10-14 17:50:43.651666 (MainThread): On master: Close
+2021-10-14 17:50:49.927832 (MainThread): Connection 'master' was properly closed.
+2021-10-14 17:50:49.928301 (MainThread): Connection 'model.fivetran_dbt.dbt_shipmentdata' was left open.
+2021-10-14 17:50:49.928489 (MainThread): On model.fivetran_dbt.dbt_shipmentdata: Close
+2021-10-14 17:50:50.035041 (MainThread): Flushing usage events
+2021-10-14 17:50:50.241930 (MainThread): ctrl-c
+2021-10-14 17:50:50.242615 (MainThread): unclosed <ssl.SSLSocket fd=17, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.19.248.230', 51522), raddr=('3.211.96.98', 443)>
+2021-10-14 17:50:54.049079 (MainThread): Running with dbt=0.21.0
+2021-10-14 17:50:56.386144 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/Users/jonas.albrecht/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-10-14 17:50:56.389612 (MainThread): Tracking: tracking
+2021-10-14 17:50:56.390976 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f878087a190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f877d60f7c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f878084dd60>]}
+2021-10-14 17:50:56.412405 (MainThread): Partial parsing not enabled
+2021-10-14 17:50:56.441365 (MainThread): Parsing macros/catalog.sql
+2021-10-14 17:50:56.446542 (MainThread): Parsing macros/adapters.sql
+2021-10-14 17:50:56.503960 (MainThread): Parsing macros/materializations/merge.sql
+2021-10-14 17:50:56.509983 (MainThread): Parsing macros/materializations/seed.sql
+2021-10-14 17:50:56.517193 (MainThread): Parsing macros/materializations/view.sql
+2021-10-14 17:50:56.520347 (MainThread): Parsing macros/materializations/table.sql
+2021-10-14 17:50:56.525036 (MainThread): Parsing macros/materializations/incremental.sql
+2021-10-14 17:50:56.538233 (MainThread): Parsing macros/core.sql
+2021-10-14 17:50:56.544930 (MainThread): Parsing macros/materializations/test.sql
+2021-10-14 17:50:56.554715 (MainThread): Parsing macros/materializations/helpers.sql
+2021-10-14 17:50:56.572110 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-10-14 17:50:56.574492 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-10-14 17:50:56.603596 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-10-14 17:50:56.657729 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-10-14 17:50:56.695811 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-10-14 17:50:56.698190 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-10-14 17:50:56.718017 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2021-10-14 17:50:56.750560 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-10-14 17:50:56.775781 (MainThread): Parsing macros/materializations/table/table.sql
+2021-10-14 17:50:56.787391 (MainThread): Parsing macros/materializations/view/view.sql
+2021-10-14 17:50:56.798866 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-10-14 17:50:56.804681 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-10-14 17:50:56.806780 (MainThread): Parsing macros/etc/query.sql
+2021-10-14 17:50:56.808313 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-10-14 17:50:56.810700 (MainThread): Parsing macros/etc/datetime.sql
+2021-10-14 17:50:56.824596 (MainThread): Parsing macros/etc/where_subquery.sql
+2021-10-14 17:50:56.828005 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-10-14 17:50:56.831415 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-10-14 17:50:56.834261 (MainThread): Parsing macros/adapters/common.sql
+2021-10-14 17:50:56.920853 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-10-14 17:50:56.923854 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-10-14 17:50:56.925799 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-10-14 17:50:56.927614 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-10-14 17:50:57.229571 (MainThread): Acquiring new snowflake connection "model.fivetran_dbt.dbt_shipmentdata".
+2021-10-14 17:50:57.283463 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-14 17:50:57.286531 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-10-14 17:50:57.309905 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '990eb707-67c6-43f3-9557-5c7541bccc7b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8780971e20>]}
+2021-10-14 17:50:57.317797 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2021-10-14 17:50:57.318307 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '990eb707-67c6-43f3-9557-5c7541bccc7b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8780971310>]}
+2021-10-14 17:50:57.318622 (MainThread): Found 1 model, 2 tests, 0 snapshots, 0 analyses, 172 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-10-14 17:50:57.320234 (MainThread): 
+2021-10-14 17:50:57.320661 (MainThread): Acquiring new snowflake connection "master".
+2021-10-14 17:50:57.322123 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_SB_DATABASE".
+2021-10-14 17:50:57.340389 (ThreadPoolExecutor-0_0): Using snowflake connection "list_SB_DATABASE".
+2021-10-14 17:50:57.340618 (ThreadPoolExecutor-0_0): On list_SB_DATABASE: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_SB_DATABASE"} */
+
+    show terse schemas in database SB_DATABASE
+    limit 10000
+2021-10-14 17:50:57.340786 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-10-14 17:50:57.377704 (ThreadPoolExecutor-0_0): Loading KWallet
+2021-10-14 17:50:57.379326 (ThreadPoolExecutor-0_0): Loading SecretService
+2021-10-14 17:50:57.380771 (ThreadPoolExecutor-0_0): Loading Windows
+2021-10-14 17:50:57.382671 (ThreadPoolExecutor-0_0): Loading chainer
+2021-10-14 17:50:57.383746 (ThreadPoolExecutor-0_0): Loading macOS
+2021-10-14 17:51:03.201044 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 9 in 5.86 seconds
+2021-10-14 17:51:03.205552 (ThreadPoolExecutor-0_0): On list_SB_DATABASE: Close
+2021-10-14 17:51:03.340999 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_SB_DATABASE_SB_SHIPMENTS".
+2021-10-14 17:51:03.352699 (ThreadPoolExecutor-1_0): Using snowflake connection "list_SB_DATABASE_SB_SHIPMENTS".
+2021-10-14 17:51:03.352972 (ThreadPoolExecutor-1_0): On list_SB_DATABASE_SB_SHIPMENTS: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_SB_DATABASE_SB_SHIPMENTS"} */
+
+    show terse objects in SB_DATABASE.SB_SHIPMENTS
+2021-10-14 17:51:03.353182 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-10-14 17:51:08.890111 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 7 in 5.54 seconds
+2021-10-14 17:51:08.895344 (ThreadPoolExecutor-1_0): On list_SB_DATABASE_SB_SHIPMENTS: Close
+2021-10-14 17:51:09.022016 (MainThread): 19:51:09 | Concurrency: 5 threads (target='dev')
+2021-10-14 17:51:09.022372 (MainThread): 19:51:09 | 
+2021-10-14 17:51:09.024847 (Thread-1): Began running node model.fivetran_dbt.dbt_shipmentdata
+2021-10-14 17:51:09.025375 (Thread-1): 19:51:09 | 1 of 1 START table model SB_SHIPMENTS.dbt_shipmentdata............... [RUN]
+2021-10-14 17:51:09.025891 (Thread-1): Acquiring new snowflake connection "model.fivetran_dbt.dbt_shipmentdata".
+2021-10-14 17:51:09.026198 (Thread-1): Compiling model.fivetran_dbt.dbt_shipmentdata
+2021-10-14 17:51:09.030931 (Thread-1): Writing injected SQL for node "model.fivetran_dbt.dbt_shipmentdata"
+2021-10-14 17:51:09.034523 (Thread-1): finished collecting timing info
+2021-10-14 17:51:09.076162 (Thread-1): Writing runtime SQL for node "model.fivetran_dbt.dbt_shipmentdata"
+2021-10-14 17:51:09.077889 (Thread-1): Using snowflake connection "model.fivetran_dbt.dbt_shipmentdata".
+2021-10-14 17:51:09.078102 (Thread-1): On model.fivetran_dbt.dbt_shipmentdata: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.fivetran_dbt.dbt_shipmentdata"} */
+
+
+      create or replace transient table SB_DATABASE.SB_SHIPMENTS.dbt_shipmentdata  as
+      (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+     
+    select '0000000000000000FC7A2500' as id
+    union all
+    select null as id
+)
+
+create proc Binary_to_DateTime ( 
+    @mydate_bin binary
+)
+as begin 
+SELECT CAST(@mydate_bin AS   DATETIME)
+end 
+select * from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+      );
+2021-10-14 17:51:09.078302 (Thread-1): Opening a new connection, currently in state closed
+2021-10-14 17:51:14.333086 (Thread-1): Snowflake query id: 019f9b6f-3200-a96a-0000-b50500471642
+2021-10-14 17:51:14.333553 (Thread-1): Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 19 at position 0 unexpected 'create'.
+syntax error line 22 at position 0 unexpected 'as'.
+2021-10-14 17:51:14.334066 (Thread-1): finished collecting timing info
+2021-10-14 17:51:14.334445 (Thread-1): On model.fivetran_dbt.dbt_shipmentdata: Close
+2021-10-14 17:51:14.463926 (Thread-1): Database Error in model dbt_shipmentdata (models/example/dbt_shipmentdata.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 19 at position 0 unexpected 'create'.
+  syntax error line 22 at position 0 unexpected 'as'.
+  compiled SQL at target/run/fivetran_dbt/models/example/dbt_shipmentdata.sql
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 183, in exception_handler
+    yield
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/cursor.py", line 721, in execute
+    Error.errorhandler_wrapper(
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 258, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 188, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 001003 (42000): SQL compilation error:
+syntax error line 19 at position 0 unexpected 'create'.
+syntax error line 22 at position 0 unexpected 'as'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 348, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 291, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 393, in run
+    return self.execute(compiled_node, manifest)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/task/run.py", line 249, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 65, in macro
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 226, in execute
+    return self.connections.execute(
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 131, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 354, in add_query
+    connection, cursor = super().add_query(
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 87, in add_query
+    return connection, cursor
+  File "/opt/anaconda3/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 200, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error in model dbt_shipmentdata (models/example/dbt_shipmentdata.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 19 at position 0 unexpected 'create'.
+  syntax error line 22 at position 0 unexpected 'as'.
+  compiled SQL at target/run/fivetran_dbt/models/example/dbt_shipmentdata.sql
+2021-10-14 17:51:14.469119 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '990eb707-67c6-43f3-9557-5c7541bccc7b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8780d124f0>]}
+2021-10-14 17:51:14.470019 (Thread-1): 19:51:14 | 1 of 1 ERROR creating table model SB_SHIPMENTS.dbt_shipmentdata...... [ERROR in 5.44s]
+2021-10-14 17:51:14.470381 (Thread-1): Finished running node model.fivetran_dbt.dbt_shipmentdata
+2021-10-14 17:51:14.473206 (MainThread): Acquiring new snowflake connection "master".
+2021-10-14 17:51:14.473725 (MainThread): 19:51:14 | 
+2021-10-14 17:51:14.473966 (MainThread): 19:51:14 | Finished running 1 table model in 17.15s.
+2021-10-14 17:51:14.474266 (MainThread): Connection 'master' was properly closed.
+2021-10-14 17:51:14.474567 (MainThread): Connection 'model.fivetran_dbt.dbt_shipmentdata' was properly closed.
+2021-10-14 17:51:14.481890 (MainThread): 
+2021-10-14 17:51:14.482170 (MainThread): Completed with 1 error and 0 warnings:
+2021-10-14 17:51:14.482472 (MainThread): 
+2021-10-14 17:51:14.482733 (MainThread): Database Error in model dbt_shipmentdata (models/example/dbt_shipmentdata.sql)
+2021-10-14 17:51:14.482953 (MainThread):   001003 (42000): SQL compilation error:
+2021-10-14 17:51:14.483160 (MainThread):   syntax error line 19 at position 0 unexpected 'create'.
+2021-10-14 17:51:14.483361 (MainThread):   syntax error line 22 at position 0 unexpected 'as'.
+2021-10-14 17:51:14.483559 (MainThread):   compiled SQL at target/run/fivetran_dbt/models/example/dbt_shipmentdata.sql
+2021-10-14 17:51:14.483843 (MainThread): 
+Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+2021-10-14 17:51:14.484228 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8780906100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f878090db20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8780cfa0d0>]}
+2021-10-14 17:51:14.484542 (MainThread): Flushing usage events

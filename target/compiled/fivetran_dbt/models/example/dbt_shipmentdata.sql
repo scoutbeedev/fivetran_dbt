@@ -8,11 +8,21 @@
 
 
 
+with source_data as (
+     
+    select '0000000000000000FC7A2500' as id
+    union all
+    select null as id
+)
 
+create proc Binary_to_DateTime ( 
+    @mydate_bin binary
+)
+as begin 
+SELECT CAST(@mydate_bin AS   DATETIME)
+end 
+select * from source_data
 
-select TOP 6
-    ARRIVAL_DATE
-from sb_shipments.shipments_silver_old
 /*
     Uncomment the line below to remove records with null `id` values
 */
